@@ -1,0 +1,249 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  /*margin: 10px 0;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .information {
+  color: #71b64c;
+}
+
+.header .information a {
+  color: #71b64c;
+}
+
+.header .information .fa-whatsapp {
+  font-size: 17px;
+  padding-right: 5px;
+}
+
+.header .information p {
+  margin: 0;
+}
+
+.header .information .p-last {
+  color: gray;
+}
+
+.header .information .p-last a {
+  color: gray;
+}
+
+.principal {
+  width: 100%;
+  background: #00B300;
+  padding: 60px;
+}
+
+.principal .contenedor {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.principal h1 {
+  color: #00B300;
+  font-weight: bold;
+}
+
+.principal h3 {
+  color: gray;
+  font-size: 20px;
+}
+
+.principal .btn {
+  background: #00B300;
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.principal .two .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .two .card-a .content-section-a {
+  width: 100%;
+}
+
+.principal .two .card-a .content-section-a .content-input {
+  width: 60%;
+  float: right;
+}
+
+.principal .two .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .two .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.principal .three .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .three .card-a .content-section-a {
+  width: 100%;
+}
+
+.principal .three .card-a .content-section-a .content-input {
+  width: 60%;
+}
+
+.principal .three .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .three .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .three .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .three .card-a .content-select {
+  width: 60%;
+  float: left;
+}
+
+.principal .four .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .four .card-a .content-section-a {
+  width: 100%;
+  text-align: right;
+}
+
+.principal .four .card-a .content-section-a .content-input {
+  width: 60%;
+}
+
+.principal .four .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .four .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .four .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .four .card-a .content-select {
+  width: 60%;
+  float: right;
+}
+
+.three div.content-section-a > div > select,
+.four div.content-section-a > div > select {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.previous {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.previous a {
+  color: #00B300;
+}
+
+.continue {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.continue a {
+  color: #00B300;
+}
