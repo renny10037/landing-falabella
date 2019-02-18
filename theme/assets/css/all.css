@@ -275,8 +275,142 @@ a:link {
   width: 60%;
 }
 
+.principal .six .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .six .card-a .content-section-a {
+  width: 100%;
+  text-align: right;
+}
+
+.principal .six .card-a .content-section-a .content-input {
+  width: 60%;
+}
+
+.principal .six .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .six .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .six .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .six .card-a .content-select {
+  width: 60%;
+  float: right;
+}
+
+.principal .seven h2 {
+  width: 100%;
+  text-align: center;
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .seven .text-viaje {
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.principal .seven .text-viaje .texto {
+  margin-top: -30px;
+  padding-bottom: 36px;
+}
+
+.principal .seven .text-viaje .texto h5 {
+  background: #00B300;
+  width: 50%;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.principal .seven .text-viaje .form-check {
+  padding-left: 0;
+}
+
+.principal .seven .text-viaje .form-check-input {
+  margin-top: 0.2rem;
+}
+
+.principal .seven label {
+  width: 100%;
+  height: 100%;
+  display: initial;
+}
+
+.principal .eight .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .eight .card-a .content-section-a {
+  width: 100%;
+  text-align: right;
+}
+
+.principal .eight .card-a .content-section-a .content-input {
+  width: 60%;
+}
+
+.principal .eight .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .eight .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .eight .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .eight .card-a .content-select {
+  width: 60%;
+  float: right;
+}
+
 .three div.content-section-a > div > select,
-.four div.content-section-a > div > select {
+.four div.content-section-a > div > select,
+.eight div.content-section-a > div > select {
   border-radius: 20px;
   border: 2px solid #00B300;
 }
@@ -303,6 +437,11 @@ a:link {
 
 .continue a {
   color: #00B300;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem #00b300;
+  box-shadow: 0 0 0 0.1rem #00b300;
 }
 
 footer {
