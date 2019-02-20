@@ -75,7 +75,7 @@ a:link{text-decoration:none;}
 		color: gray;
 		font-size: 20px;
 	}
-	& .btn{
+	& .btn-one{
 		background: $green-background;
 		border-radius: 15px;
 		padding-left: 25px;
@@ -238,6 +238,9 @@ a:link{text-decoration:none;}
 			    		}
 			    	}
 			    }
+			    & .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group{
+			    	float: right;
+			    }
 			h2{
 				color: $green-background;
 				font-weight: bold;
@@ -332,6 +335,10 @@ a:link{text-decoration:none;}
 				float: right;
 				
 			}
+		}
+		& img{
+			width: 100%;
+			height: 90%;
 		}
 	}
 	.nine{
@@ -462,6 +469,12 @@ a:link{text-decoration:none;}
 	}
 }
 
+#startDate,#endDate {border-radius: 20px;
+border: 2px solid $green-background;
+}
+.btn.btn-outline-secondary.border-left-0{
+	display: none;
+}
 .form-control:focus {
     
     box-shadow: 0 0 0 0.1rem #00b300;

@@ -100,7 +100,7 @@ a:link {
   font-size: 20px;
 }
 
-.principal .btn {
+.principal .btn-one {
   background: #00B300;
   border-radius: 15px;
   padding-left: 25px;
@@ -304,6 +304,10 @@ a:link {
   border: 2px solid #00B300;
 }
 
+.principal .six .card-a .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+  float: right;
+}
+
 .principal .six .card-a h2 {
   color: #00B300;
   font-weight: bold;
@@ -407,6 +411,11 @@ a:link {
 .principal .eight .card-a .content-select {
   width: 60%;
   float: right;
+}
+
+.principal .eight img {
+  width: 100%;
+  height: 90%;
 }
 
 .principal .nine .card-a {
@@ -551,6 +560,16 @@ a:link {
 
 .continue a {
   color: #00B300;
+}
+
+#startDate,
+#endDate {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.btn.btn-outline-secondary.border-left-0 {
+  display: none;
 }
 
 .form-control:focus {
