@@ -7,6 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 	<link rel="stylesheet" href="assets/css/all.css">
@@ -24,7 +25,7 @@
 		</div>
 	</header><!-- /header -->
 	<div class="principal slider">
-		<!--<section class="one contenedor">
+		<section class="one contenedor">
 			<div class="container">
 				<div class="row">
 					<div class="card-a col-sm-8">
@@ -49,7 +50,7 @@
 						<div class="content-section-a">
 							<h2>¿Con qué correo electrónico te registraste </br> en El Rincón del Viajero?</h2>
 							<div class="content-input">
-								<input type="email" name="email" class="form-control">
+								<input type="email" name="email" class="form-control" placeholder="example@gmail.com">
 							</div>
 
 						</div>
@@ -70,7 +71,21 @@
 							<div class="form-group content-select">
 								<select class="form-control">
 									<option class="select" selected>Elige un destino</option>
-									<option>...</option>
+									<option value="Leticia">Leticia</option>
+									<option value="Medellin">Medellín</option>
+									<option value="Barranquilla">Barranquilla</option>
+									<option value="Cartagena de Indias">Cartagena de Indias</option>
+									<option value="Tunja">Tunja</option>
+									<option value="Manizales">Manizales</option>
+									<option value="Bogota">Bogotá</option>
+									<option value="Santa Marta">Santa Marta</option>
+									<option value="San Jose de Cucuta">San José de Cúcuta</option>
+									<option value="Armenia">Armenia</option>
+									<option value="Pereira">Pereira</option>
+									<option value="San Andres">San Andrés</option>
+									<option value="Bucaramanga">Bucaramanga</option>
+									<option value="Ibague">Ibagué</option>
+									<option value="Cali">Cali</option>
 								</select>
 							</div>
 
@@ -103,7 +118,20 @@
 							<div class="form-group content-select">
 								<select class="form-control">
 									<option class="select" selected>Elige un destino</option>
-									<option>...</option>
+									<option value="Cancun">Cancún</option>
+									<option value="Orlando">Orlando</option>
+									<option value="Aruba">Aruba</option>
+									<option value="Europa-interno">Europa - interno</option>
+									<option value="Punta Cana">Punta Cana</option>
+									<option value="Argentina">Argentina</option>
+									<option value="Mexico">México</option>
+									<option value="Nacional">Nacional</option>
+									<option value="Turquia">Turquía</option>
+									<option value="Armenia">Armenia</option>
+									<option value="Pereira">Pereira</option>
+									<option value="San Andres">San Andrés</option>
+									<option value="Chile ">Chile </option>
+									<option value="España">España</option>
 								</select>
 							</div>
 
@@ -137,7 +165,7 @@
 						<div class="continue">
 							<a href="" title="">Continuar</a>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -150,7 +178,7 @@
 						<div class="previous">
 							<a href="" title="">Anterior</a>
 						</div>
-						
+
 					</div>
 					<div class="card-a col-sm-8">
 						<div class="content-section-a">
@@ -257,15 +285,20 @@
 						<div class="previous">
 							<a href="" title="">Anterior</a>
 						</div>
-						
+
 					</div>
 					<div class="card-a col-sm-8">
 						<div class="content-section-a">
-							<h2>¿Qué tipo de viajero te cnsideras?</h2>
+							<h2>¿Qué tipo de viajero te consideras?</h2>
 							<div class="form-group content-select">
 								<select class="form-control">
 									<option class="select" selected>Selecciona</option>
-									<option>...</option>
+									<option value="Si a todo">Sí a todo</option>
+									<option value="Fotografo">Fotógrafo</option>
+									<option value="Updater">Updater</option>
+									<option value="Ahorrador">Ahorrador</option>
+									<option value="Solitario">Solitario</option>
+									<option value="Cultural">Cultural</option>
 								</select>
 							</div>
 						</div>
@@ -275,7 +308,96 @@
 					</div>
 				</div>
 			</div>
-		</section>-->
+		</section>
+		<section class="nine contenedor">
+			<div class="container">
+				<div class="row">
+					<div class="card-a col-sm-8">
+						<div class="content-section-a">
+							<h2>¿Qué servicios quieres </br> que incluya tu paquete?</h2>
+							<div class="container">
+								<div class="row">
+									<div class="colsm-6 card-checkbox-a">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="hospedaje" value="servicios" checked>
+											<label class="custom-control-label" for="hospedaje">Hospedaje</label>
+										</div>
+
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="Alimentacion" value="Alimentacion">
+											<label class="custom-control-label" for="Alimentacion">Alimentacion</label>
+										</div>
+
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="traslado-compartido" value="Traslado compartido">
+											<label class="custom-control-label" for="traslado-compartido">Traslado compartido</label>
+										</div>
+
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="traslado-privado" value="Traslado privado">
+											<label class="custom-control-label" for="traslado-privado">Traslado privado</label>
+										</div>
+
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="tours" value="Tours">
+											<label class="custom-control-label" for="tours">Tours</label>
+										</div>
+									</div>
+
+									<div class="colsm-6 card-checkbox-b">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="tiquetes" value="Tiquetes">
+											<label class="custom-control-label" for="tiquetes">Tiquetes</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="seguros-de-viajes" value="Seguros de viajes">
+											<label class="custom-control-label" for="seguros-de-viajes">Seguros de viajes</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="lugares-de-interes" value="Entradas a lugares de interes">
+											<label class="custom-control-label" for="lugares-de-interes">Entradas a lugares de interés</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="actividades-gratuitas" value="Actividades gratuitas">
+											<label class="custom-control-label" for="actividades-gratuitas">Actividades gratuitas</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="previous">
+							<a href="" title="">Anterior</a>
+						</div>
+					</div>
+					<div class="card-b col-sm-4">
+						<img src="assets/img/servicios.svg" alt="">
+						<div class="continue">
+							<a href="" title="">Continuar</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ten contenedor">
+			<div class="container">
+				<div class="row">
+					<div class="card-a col-sm-8">
+						<div class="content-section-a">
+							<h2>Listo, ________.</h2>
+							<h3>Utilizaremos esta información para <br>ayudarte a planear el viaje a tu medida.</h3>
+
+							<h3>Un agente de viajes especializado se <br>comunicará contigo in ningún costo para <br> continuar asesorándote.</h3>
+
+							<h4>!Vuela alto y cumple tus sueños!</h4>
+						</div>
+					</div>
+					<div class="card-b col-sm-4">
+						<img src="assets/img/listo.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 	<footer>
 		<h3>Más razones para viajar con nsotros!</h3>
@@ -322,15 +444,15 @@
 				autoplaySpeed: 5000,
 				arrows: false,
 				dots:false,
-//nextArrow: '<i class="fa fa-arrow-right"></i>',
-//prevArrow: '<i class="fa fa-arrow-left"></i>',
+prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
 });
 		});
 	</script>
 </body>
 </html>
 <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
+	$(function () {
+		$('#datetimepicker1').datetimepicker();
+	});
+</script>

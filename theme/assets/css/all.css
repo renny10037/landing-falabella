@@ -25,6 +25,7 @@ a:link {
 }
 
 .header {
+  font-family: 'Lato', sans-serif;
   width: 100%;
   height: 100px;
   /*margin: 10px 0;*/
@@ -40,11 +41,11 @@ a:link {
 }
 
 .header .information {
-  color: #71b64c;
+  color: #3fae2a;
 }
 
 .header .information a {
-  color: #71b64c;
+  color: #3fae2a;
 }
 
 .header .information .fa-whatsapp {
@@ -408,6 +409,119 @@ a:link {
   float: right;
 }
 
+.principal .nine .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .nine .card-a .content-section-a {
+  width: 100%;
+  text-align: left;
+}
+
+.principal .nine .card-a .content-section-a .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background: #00B300;
+}
+
+.principal .nine .card-a .content-section-a .custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+  background: white;
+  border: 2px solid #00B300;
+}
+
+.principal .nine .card-a .content-section-a label {
+  color: #5a5858;
+}
+
+.principal .nine .card-a .content-section-a .card-checkbox-b {
+  padding-left: 60px;
+}
+
+.principal .nine .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .nine .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .nine .card-a .content-select {
+  width: 60%;
+}
+
+.principal .ten .card-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.principal .ten .card-a .content-section-a {
+  width: 100%;
+  text-align: left;
+}
+
+.principal .ten .card-a .content-section-a .content-input {
+  width: 60%;
+}
+
+.principal .ten .card-a .content-section-a .content-input input {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .ten .card-a h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.principal .ten .card-a h3 {
+  color: gray;
+  font-size: 18px;
+  line-height: 1.3;
+  padding-top: 10px;
+}
+
+.principal .ten .card-a h4 {
+  color: #584a4a;
+  font-size: 16px;
+  line-height: 1.3;
+  padding-top: 10px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.principal .ten .card-a .from-control {
+  border-radius: 20px;
+  border: 2px solid #00B300;
+}
+
+.principal .ten .card-a .content-select {
+  width: 60%;
+}
+
 .three div.content-section-a > div > select,
 .four div.content-section-a > div > select,
 .eight div.content-section-a > div > select {
@@ -450,17 +564,18 @@ footer {
   padding: 1rem;
   height: 300px;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 footer h3 {
   color: #444343;
-  font-size: 20px;
+  font-size: 21px;
   padding: 10px 0;
 }
 
 footer h5 {
   color: #444343;
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 10px;
   line-height: 1.5;
 }
