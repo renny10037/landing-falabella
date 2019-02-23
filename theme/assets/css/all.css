@@ -91,6 +91,18 @@ a:link {
   padding: 40px;
 }
 
+.principal .card-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .principal h1 {
   color: #00B300;
   font-weight: bold;
@@ -127,7 +139,7 @@ a:link {
 }
 
 .principal .two .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
   float: right;
 }
 
@@ -163,7 +175,7 @@ a:link {
 }
 
 .principal .three .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .three .card-a .content-section-a .content-input input {
@@ -184,7 +196,7 @@ a:link {
 }
 
 .principal .three .card-a .content-select {
-  width: 60%;
+  width: 400px;
   float: left;
 }
 
@@ -208,7 +220,7 @@ a:link {
 }
 
 .principal .four .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .four .card-a .content-section-a .content-input input {
@@ -229,7 +241,7 @@ a:link {
 }
 
 .principal .four .card-a .content-select {
-  width: 60%;
+  width: 400px;
   float: right;
 }
 
@@ -253,7 +265,7 @@ a:link {
 }
 
 .principal .five .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .five .card-a .content-section-a .content-input input {
@@ -274,7 +286,7 @@ a:link {
 }
 
 .principal .five .card-a .content-select {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .six .card-a {
@@ -297,7 +309,7 @@ a:link {
 }
 
 .principal .six .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .six .card-a .content-section-a .content-input input {
@@ -322,7 +334,7 @@ a:link {
 }
 
 .principal .six .card-a .content-select {
-  width: 60%;
+  width: 400px;
   float: right;
 }
 
@@ -335,19 +347,18 @@ a:link {
   padding-bottom: 10px;
 }
 
+.principal .seven .img-viaje {
+  height: 200px;
+}
+
 .principal .seven .text-viaje {
   width: 100%;
   text-align: -webkit-center;
 }
 
-.principal .seven .text-viaje .texto {
-  margin-top: -30px;
-  padding-bottom: 36px;
-}
-
 .principal .seven .text-viaje .texto h5 {
   background: #00B300;
-  width: 50%;
+  width: 170px;
   padding: 7px;
   border-radius: 20px;
   font-size: 16px;
@@ -389,7 +400,7 @@ a:link {
 }
 
 .principal .eight .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .eight .card-a .content-section-a .content-input input {
@@ -410,7 +421,7 @@ a:link {
 }
 
 .principal .eight .card-a .content-select {
-  width: 60%;
+  width: 400px;
   float: right;
 }
 
@@ -452,10 +463,6 @@ a:link {
   color: #5a5858;
 }
 
-.principal .nine .card-a .content-section-a .card-checkbox-b {
-  padding-left: 60px;
-}
-
 .principal .nine .card-a h2 {
   color: #00B300;
   font-weight: bold;
@@ -469,7 +476,7 @@ a:link {
 }
 
 .principal .nine .card-a .content-select {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .ten .card-a {
@@ -492,7 +499,7 @@ a:link {
 }
 
 .principal .ten .card-a .content-section-a .content-input {
-  width: 60%;
+  width: 400px;
 }
 
 .principal .ten .card-a .content-section-a .content-input input {
@@ -529,7 +536,7 @@ a:link {
 }
 
 .principal .ten .card-a .content-select {
-  width: 60%;
+  width: 400px;
 }
 
 .three div.content-section-a > div > select,
@@ -625,4 +632,372 @@ footer .card-c {
 footer .content-img {
   height: 161px;
   width: 161px;
+}
+
+.slick-list,
+.slick-track,
+.contenedor,
+.contenedor .container,
+.contenedor .row {
+  height: 100% !important;
+}
+
+/*start responsive 1200-1024*/
+
+/*end responsive 1200-1024*/
+
+/*start responsive 1024-768*/
+
+/*end responsive 1024-768*/
+
+/*start responsive 1024-480*/
+
+/*end responsive 1024-480*/
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  /*start header*/
+
+  header .logo-falabella {
+    width: 240px;
+    height: 60px;
+  }
+
+  header .information {
+    font-size: 14px;
+  }
+
+  /*end header*/
+
+  /*start body*/
+
+  .principal {
+    height: 500px;
+  }
+
+  .principal h2 {
+    font-size: 16px !important;
+  }
+
+  .principal .one h1 {
+    font-size: 2em;
+  }
+
+  .principal .one h3 {
+    font-size: 16px;
+  }
+
+  .principal .one button {
+    font-size: 13px;
+  }
+
+  .principal .two button {
+    font-size: 13px;
+  }
+
+  .principal .seven .img-viaje {
+    height: 150px;
+  }
+
+  .principal .seven .text-viaje .texto h5 {
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-a {
+    font-size: 14px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-b {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  /*end body*/
+
+  /*start footer*/
+
+  footer .content-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  footer h5 {
+    font-size: 12px;
+  }
+
+  /*end footer header*/
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  /*start header*/
+
+  header .logo-falabella {
+    width: 200px;
+    height: 60px;
+  }
+
+  header .information {
+    font-size: 14px;
+  }
+
+  /*end header*/
+
+  /*start body*/
+
+  .principal {
+    height: 500px;
+  }
+
+  .principal h2 {
+    font-size: 15px !important;
+  }
+
+  .principal .content-select {
+    width: 200px !important;
+  }
+
+  .principal .content-select .form-control {
+    font-size: 14px;
+  }
+
+  .principal .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .card-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .one h1 {
+    font-size: 1.4em;
+  }
+
+  .principal .one h3 {
+    font-size: 16px;
+  }
+
+  .principal .one button {
+    font-size: 13px;
+  }
+
+  .principal .two .card-a .content-section-a .content-input {
+    width: 200px;
+  }
+
+  .principal .two .card-a .content-section-a .content-input input {
+    font-size: 12px;
+  }
+
+  .principal .three .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .four .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .five .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .six .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .seven .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .seven .img-viaje {
+    height: 120px;
+  }
+
+  .principal .seven .text-viaje .texto h5 {
+    font-size: 12px;
+    width: 90px;
+  }
+
+  .principal .seven .text-viaje .form-check-input {
+    margin-top: 0.0rem;
+  }
+
+  .principal .eight .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .nine .continue {
+    margin-left: -50px !important;
+  }
+
+  .principal .nine .content-section-a h2 {
+    font-size: 22px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-a {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-b {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .principal .nine .card-b .servicios {
+    display: none !important;
+  }
+
+  .principal .ten .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .ten .content-section-a h3 {
+    font-size: 14px;
+  }
+
+  .principal .ten .content-section-a h4 {
+    font-size: 12px;
+  }
+
+  /*end body*/
+
+  /*start footer*/
+
+  footer .content-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  footer h5 {
+    font-size: 12px;
+  }
+
+  /*end footer header*/
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  /*start header*/
+
+  header .logo-falabella {
+    width: 200px;
+    height: 60px;
+  }
+
+  header .information {
+    font-size: 14px;
+  }
+
+  /*end header*/
+
+  /*start body*/
+
+  .principal {
+    height: 500px;
+  }
+
+  .principal .content-select {
+    width: 200px !important;
+  }
+
+  .principal .content-select .form-control {
+    font-size: 14px;
+  }
+
+  .principal .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .card-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .one h1 {
+    font-size: 1.4em;
+  }
+
+  .principal .one h3 {
+    font-size: 16px;
+  }
+
+  .principal .one button {
+    font-size: 13px;
+  }
+
+  .principal .three .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .four .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .five .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .six .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .seven .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .seven .img-viaje {
+    height: 120px;
+  }
+
+  .principal .seven .text-viaje .texto h5 {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .principal .eight .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .nine .content-section-a h2 {
+    font-size: 22px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-a {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .principal .nine .card-a .content-section-a .card-checkbox-b {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .principal .nine .card-b .servicios {
+    display: none !important;
+  }
+
+  .principal .ten .content-section-a h2 {
+    font-size: 18px;
+  }
+
+  .principal .ten .content-section-a h3 {
+    font-size: 14px;
+  }
+
+  .principal .ten .content-section-a h4 {
+    font-size: 12px;
+  }
+
+  /*end body*/
+
+  /*start footer*/
+
+  footer .content-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  footer h5 {
+    font-size: 12px;
+  }
+
+  /*end footer header*/
 }
