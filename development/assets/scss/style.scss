@@ -14,7 +14,6 @@ body{
 }
 a{text-decoration: none;}
 a:link{text-decoration:none;}
-
 .header{
 	font-family: 'Lato', sans-serif;
 	width: 100%;
@@ -62,13 +61,23 @@ a:link{text-decoration:none;}
 
 	}
 	& .card-a{
-		
+		height: 100%;
 	}
 	& .card-b{
+		width: 300px;
+		height:300px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		
+	}
+	& .section-flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height:100%;
+	}
+	& .one{
 	}
 	& h1{
 		color: $green-background;
@@ -91,6 +100,7 @@ a:link{text-decoration:none;}
 			    justify-content: center;
 			    align-items: center;
 			    flex-wrap: wrap;
+			    width: 60%;
 			    & .content-section-a{
 			    	width: 100%;
 			    	& .content-input{
@@ -281,6 +291,18 @@ a:link{text-decoration:none;}
 			font-size: 25px;
 			padding-bottom: 10px;
 		}
+		& .section-before-after{
+			margin-top: -48px;
+		}
+
+		& .seven-card-a, & .seven-card-b{
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		}
 		& .img-viaje{
 			height: 200px;
 		}
@@ -463,28 +485,21 @@ a:link{text-decoration:none;}
 	border: 2px solid $green-background;		
 }
 
-
-
-
-
-.previous{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	text-align: left;
-	padding-left: 15px;
+.section-before-after{
+	
+	display: flex;
+	justify-content: space-between;
+}
+.before{
+	
 	& button{
 		color:$green-background;
 		background: transparent;
 		border: none;
 	}
 }
-.continue{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	text-align: right;
-	padding-right: 15px;
+.after{
+	
 	& button{
 	color:$green-background;
 	background: transparent;
@@ -529,14 +544,14 @@ footer{
 			 color: #444343;
 		}
 	}
-	& .card-a,& .card-b,& .card-c,{
-		height: 200px;
+	& .card-a{
 		text-align: center;
-		text-align: -webkit-center;
 	}
+
 	& .content-img{
 		height: 161px;
 		width: 161px;
+		margin:auto;
 	}
 }
 
@@ -544,99 +559,105 @@ footer{
 
 .slick-list,.slick-track,.contenedor,.contenedor .container,.contenedor .row{
  	height: 100% !important;
+ 	
 	
  }
 
 
-/*start responsive 1200-1024*/
- @media screen and (max-width: 1200px) and (min-width: 1024px) {
-	/*start header*/
- 	header{
- 		& .logo-falabella{
- 			width: 240px;
- 			height: 60px;
+ /*start responsive 1200-1024*/
+  @media screen and (max-width: 1200px) and (min-width: 1024px) {
+ 	/*start header*/
+  	header{
+  		& .logo-falabella{
+  			width: 240px;
+  			height: 60px;
+  		}
+  		& .information{
+  			font-size: 14px;
+  		}
+  	}
+ 	/*end header*/
+
+ 	/*start body*/
+ 	.principal{
+ 		height: 500px;
+ 				& h2{
+
+ 					font-size: 16px !important;
+
+ 				}
+ 				& .one{
+ 					& h1{
+ 						font-size: 2em;
+ 					}
+ 					& h3{
+
+ 						font-size: 16px;
+
+ 					}
+ 					& button{
+ 						font-size:13px;
+ 					}
+ 				}
+ 		& .one{}
+
+ 		& .two{
+ 			& .card-a{
+ 				& .content-section-a{
+ 				   	
+ 			    	& .content-input{
+ 		    		    width: 300px;
+			    		float: right;
+			    		& input{
+ 				    	} 				    	
+ 				    }
+ 				}
+ 			}
  		}
- 		& .information{
- 			font-size: 14px;
+ 		.four{
+ 			& .card-a{
+			    & .content-section-a{
+			    	& .content-select{
+			    		width: 300px;
+		
+			   	 	}
+				}
+ 			}
+ 		}
+ 		& .seven{
+ 			& .img-viaje{
+ 				height: 150px;
+ 				width: 150px;
+ 			}
+ 			.text-viaje .texto h5 {
+ 			    width: 130px;
+ 			    padding: 5px;
+ 			    font-size: 14px;
+ 			}
+ 			& .section-before-after{
+ 				margin-top: -45px;
+ 			}
+ 		}
+
+ 	}
+ 		
+ 	/*end body*/
+
+ 	/*start footer*/
+ 	footer{
+ 		.content-img {
+ 		    height: 130px;
+ 		    width: 130px;
+ 		     
+ 		  }
+ 		& h5{
+ 			font-size: 12px;
+
  		}
  	}
-	/*end header*/
-
-	/*start body*/
-	.principal{
-		height: 500px;
-		& h2{
-
-			font-size: 16px !important;
-
-		}
-		& .one{
-			& h1{
-				font-size: 2em;
-			}
-			& h3{
-
-				font-size: 16px;
-
-			}
-			& button{
-				font-size:13px;
-			}
-		}
-
-		& .two{
-			
-			& button{
-				font-size:13px;
-			}
-		}
-
-		& .seven{
-			& .img-viaje{
-				height: 150px;
-			}
-			.text-viaje .texto {
-			    
-			    & h5{
-			    	
-			    	font-size: 12px;
-			    	width: 130px;
-			    }
-			}
-		}
-		& .nine{
-			& .card-a{
-				& .content-section-a{
-					& .card-checkbox-a{
-						font-size:14px;
-					}
-					& .card-checkbox-b{
-						padding-left: 0;
-						font-size:14px;
-					}
-				}
-			}
-		}
-    
-	}
-	/*end body*/
-
-	/*start footer*/
-	footer{
-		.content-img {
-		    height: 130px;
-		    width: 130px;
-		     
-		  }
-		& h5{
-			font-size: 12px;
-
-		}
-	}
-	/*end footer header*/
+ 	/*end footer header*/
 }
-/*end responsive 1200-1024*/
-
+ /*end responsive 1200-1024*/
 
 
 
@@ -657,12 +678,15 @@ footer{
 
 	/*start body*/
 	.principal{
-		height: 500px;
 		& h2{
-
 			font-size: 15px !important;
-
 		}
+		height: 500px;
+		& .card-b{
+			width: 200px;
+			height:200px;
+		}
+
 		& .content-select,{
 			width: 200px !important;
 			& .form-control{
@@ -673,10 +697,10 @@ footer{
 				font-size: 18px;
 			}
 		& .card-a{
-				& h2{
-					font-size: 18px;
-				}
+			& h2{
+				font-size: 18px;
 			}
+		}
 
 		& .one{
 			& h1{
@@ -693,6 +717,9 @@ footer{
 		}
 
 		& .two{
+			& .section-flex{
+				flex-wrap:nowrap;
+			}
 			& .card-a{
 				& .content-section-a{
 					& .content-input{
@@ -706,118 +733,50 @@ footer{
 			}
 		}
 
-
-
-		& .three{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .four{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .five{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .six{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .seven{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-			& .img-viaje{
-				height: 120px;
-			}
-			.text-viaje .texto {
-			    
-			    & h5{
-			    	
-			    	font-size: 12px;
-			    	width: 90px;
-
-			    }
-			}
-			.text-viaje .form-check-input {
-			    margin-top: 0.0rem;
-			}
-
-
-		}
-		& .eight{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-		& .nine{
-			& .continue{
-				margin-left: -50px!important;
-			}
-			& .content-section-a h2{
-				font-size: 22px;
-			}
+		.three{
 			& .card-a{
-				& .content-section-a{
-					& .card-checkbox-a{
-						padding-left: 0;
-						font-size:12px;					}
-					& .card-checkbox-b{
-						padding-left: 0;
-						font-size:12px;
-					}
-				}
-			}
-			& .card-b{
-				.servicios{
-					display: none !important;
+				& .content-select{
+					    width: 220px;
 				}
 			}
 		}
-		& .ten{
-			& .content-section-a{
-				& h2{
-					font-size: 18px;
-				}
-				& h3{
-					font-size: 14px;
-				}
-				& h4{
-					font-size: 12px;
-				}
+		& .seven{
+			& .img-viaje{
+				height: 100px;
+				width: 100px;
+			}
+			.text-viaje .texto h5 {
+			    width: 95px;
+			    padding: 7px;
+			    font-size: 12px;
+			}
+			& .section-before-after{
+				margin-top: -40px;
 			}
 		}
-    
-	}
-	/*end body*/
 
-	/*start footer*/
-	footer{
-		.content-img {
-		    height: 130px;
-		    width: 130px;
-		     
-		  }
-		& h5{
-			font-size: 12px;
 
+
+		/*start footer*/
+		footer{
+			.content-img {
+			    height: 130px;
+			    width: 130px;
+			     
+			  }
+			& h5{
+				font-size: 12px;
+
+			}
 		}
+		/*end footer*/
 	}
-	/*end footer header*/
 }
+
 /*end responsive 1024-768*/
 
-/*start responsive 1024-480*/
- @media screen and (max-width: 767px) and (min-width: 480px) {
+/*start responsive 767-522*/
+ @media screen and (max-width: 767px) and (min-width: 522px) {
 
 	/*start header*/
  	header{
@@ -834,21 +793,38 @@ footer{
 	/*start body*/
 	.principal{
 		height: 500px;
-		& .content-select,{
-			width: 200px !important;
+		& h2{
+			font-size: 15px !important;
+			text-align: center;
+		}
+		& .content-select{
+		width: 100% !important;
+		text-align: -webkit-center;
 			& .form-control{
 				font-size: 14px;
+				width: 180px;
 			}
 		}
+		.before button,.after button{
+			font-size: 12px;
+		}	
 		& .content-section-a h2{
-				font-size: 18px;
-			}
+			font-size: 18px;
+		}
+		& .section-flex{
+			flex-wrap:wrap;
+			justify-content: center;
+		}
 		& .card-a{
-				& h2{
-					font-size: 18px;
-				}
-			}
+			text-align: -webkit-center;
+			width: 100%;
+			height: auto;
+		}
+		& .card-b{
+			width: 180px;
+			height:180px;
 
+		}
 		& .one{
 			& h1{
 				font-size: 1.4em;
@@ -861,102 +837,161 @@ footer{
 			& button{
 				font-size:13px;
 			}
-		}
-		& .three{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .four{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .five{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .six{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-
-		& .seven{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-			& .img-viaje{
-				height: 120px;
-			}
-			.text-viaje .texto {
-			    
-			    & h5{
-			    	
-			    	font-size: 12px;
-			    	width: 100px;
-			    }
-			}
-		}
-		& .eight{
-			& .content-section-a h2{
-				font-size: 18px;
-			}
-		}
-		& .nine{
-			& .content-section-a h2{
-				font-size: 22px;
-			}
+		} 
+		& .two{
 			& .card-a{
+				width: 200px;
+				
 				& .content-section-a{
-					& .card-checkbox-a{
-						padding-left: 0;
-						font-size:12px;					}
-					& .card-checkbox-b{
-						padding-left: 0;
-						font-size:12px;
+					& .content-input{
+						width: 200px;
+						text-align: -webkit-center;
+						& input{
+							font-size: 12px;
+							width: 180px !important;
+							height:auto;
+						}
+					}
+				}			
+			
+			}
+		}
+		.three{
+			& .card-a{
+				order:1;
+				& .content-select{
+					    width: 200px;
+
+					float: left;
+					
+				}
+			}
+		}
+		.five{
+			.card-a{
+				order: 2;
+			}
+			.card-b{
+				order: 1;
+			}
+			& #startDate{
+				font-size: 12px;
+			}
+		}
+
+		/*start footer*/
+		footer{
+			.content-img {
+			    height: 130px;
+			    width: 130px;
+			     
+			  }
+			& h5{
+				font-size: 12px;
+
+			}
+		}
+		/*end footer*/
+	}
+}
+
+/*end responsive 767-522*/
+
+/* /*start responsive 522-0*/
+ @media screen and (max-width: 522px){
+
+	/*start header*/
+ 	header{
+ 		& .logo-falabella{
+ 			width: 200px;
+ 			height: 60px;
+ 		}
+ 		& .information{
+ 			font-size: 14px;
+ 		}
+ 	}
+	/*end header*/
+
+	/*start body*/
+	.principal{
+		height: 800px;
+		padding: 5px!important;
+		& .section-flex{
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			height:100%;
+		}
+		& .contenedor{
+			
+			
+
+		}
+		& .one{
+			& h1{
+				font-size: 20px;
+			}
+			& h1{
+				font-size: 17px;
+			}
+		}
+		& .section-flex{
+			flex-wrap:wrap;
+			justify-content: center;
+		}
+		& .card-a{
+			text-align: center;
+			width: 100%;
+			height: auto;
+		}
+		& .card-b{
+			width: 180px;
+			align-items: flex-start;
+			height: 100%;
+		}
+		& .one{
+			
+		} 
+		& .two{
+			& .card-a{
+				width: auto;
+				& .content-section-a{
+					& h2{
+						text-align: center;
+					}
+					& .content-input{
+						width: 100%;
+						text-align: -webkit-center;
+						& input{
+							font-size: 12px;
+							width: 200px;
+						}
 					}
 				}
-			}
-			& .card-b{
-				.servicios{
-					display: none !important;
-				}
+			
 			}
 		}
-		& .ten{
-			& .content-section-a{
-				& h2{
-					font-size: 18px;
-				}
-				& h3{
-					font-size: 14px;
-				}
-				& h4{
-					font-size: 12px;
-				}
+		.three{
+			& .card-a{
+				order: 1;
 			}
 		}
-    
-	}
-	/*end body*/
 
-	/*start footer*/
-	footer{
-		.content-img {
-		    height: 130px;
-		    width: 130px;
-		     
-		  }
-		& h5{
-			font-size: 12px;
+		& 
+		/*start footer*/
+		footer{
+			.content-img {
+			    height: 130px;
+			    width: 130px;
+			     
+			  }
+			& h5{
+				font-size: 12px;
 
+			}
 		}
+		/*end footer*/
 	}
-	/*end footer header*/
 }
-/*end responsive 1024-480*/
+
+/*end responsive 522-0*/

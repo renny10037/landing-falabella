@@ -91,7 +91,13 @@ a:link {
   padding: 40px;
 }
 
+.principal .card-a {
+  height: 100%;
+}
+
 .principal .card-b {
+  width: 300px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +107,19 @@ a:link {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.principal .section-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 .principal h1 {
@@ -132,6 +151,7 @@ a:link {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 60%;
 }
 
 .principal .two .card-a .content-section-a {
@@ -347,6 +367,25 @@ a:link {
   padding-bottom: 10px;
 }
 
+.principal .seven .section-before-after {
+  margin-top: -48px;
+}
+
+.principal .seven .seven-card-a,
+.principal .seven .seven-card-b {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .principal .seven .img-viaje {
   height: 200px;
 }
@@ -546,29 +585,22 @@ a:link {
   border: 2px solid #00B300;
 }
 
-.previous {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: left;
-  padding-left: 15px;
+.section-before-after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.previous button {
+.before button {
   color: #00B300;
   background: transparent;
   border: none;
 }
 
-.continue {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: right;
-  padding-right: 15px;
-}
-
-.continue button {
+.after button {
   color: #00B300;
   background: transparent;
   border: none;
@@ -621,17 +653,14 @@ footer h5 a {
   color: #444343;
 }
 
-footer .card-a,
-footer .card-b,
-footer .card-c {
-  height: 200px;
+footer .card-a {
   text-align: center;
-  text-align: -webkit-center;
 }
 
 footer .content-img {
   height: 161px;
   width: 161px;
+  margin: auto;
 }
 
 .slick-list,
@@ -650,9 +679,112 @@ footer .content-img {
 
 /*end responsive 1024-768*/
 
-/*start responsive 1024-480*/
+/*start responsive 767-522*/
 
-/*end responsive 1024-480*/
+/*end responsive 767-522*/
+
+/* /*start responsive 522-0*/
+
+/*end responsive 522-0*/
+
+@media screen and (max-width: 522px) {
+  /*start header*/
+
+  header .logo-falabella {
+    width: 200px;
+    height: 60px;
+  }
+
+  header .information {
+    font-size: 14px;
+  }
+
+  /*end header*/
+
+  /*start body*/
+
+  .principal {
+    height: 800px;
+    padding: 5px !important;
+    /*end footer*/
+  }
+
+  .principal .section-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    height: 100%;
+  }
+
+  .principal .one h1 {
+    font-size: 20px;
+  }
+
+  .principal .one h1 {
+    font-size: 17px;
+  }
+
+  .principal .section-flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .principal .card-a {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .principal .card-b {
+    width: 180px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .principal .two .card-a {
+    width: auto;
+  }
+
+  .principal .two .card-a .content-section-a h2 {
+    text-align: center;
+  }
+
+  .principal .two .card-a .content-section-a .content-input {
+    width: 100%;
+    text-align: -webkit-center;
+  }
+
+  .principal .two .card-a .content-section-a .content-input input {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .principal .three .card-a {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .principal footer .content-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .principal footer h5 {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
   /*start header*/
@@ -690,26 +822,28 @@ footer .content-img {
     font-size: 13px;
   }
 
-  .principal .two button {
-    font-size: 13px;
+  .principal .two .card-a .content-section-a .content-input {
+    width: 300px;
+    float: right;
+  }
+
+  .principal .four .card-a .content-section-a .content-select {
+    width: 300px;
   }
 
   .principal .seven .img-viaje {
     height: 150px;
+    width: 150px;
   }
 
   .principal .seven .text-viaje .texto h5 {
-    font-size: 12px;
     width: 130px;
-  }
-
-  .principal .nine .card-a .content-section-a .card-checkbox-a {
+    padding: 5px;
     font-size: 14px;
   }
 
-  .principal .nine .card-a .content-section-a .card-checkbox-b {
-    padding-left: 0;
-    font-size: 14px;
+  .principal .seven .section-before-after {
+    margin-top: -45px;
   }
 
   /*end body*/
@@ -746,10 +880,17 @@ footer .content-img {
 
   .principal {
     height: 500px;
+    /*start footer*/
+    /*end footer*/
   }
 
   .principal h2 {
     font-size: 15px !important;
+  }
+
+  .principal .card-b {
+    width: 200px;
+    height: 200px;
   }
 
   .principal .content-select {
@@ -780,6 +921,11 @@ footer .content-img {
     font-size: 13px;
   }
 
+  .principal .two .section-flex {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
   .principal .two .card-a .content-section-a .content-input {
     width: 200px;
   }
@@ -788,94 +934,36 @@ footer .content-img {
     font-size: 12px;
   }
 
-  .principal .three .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .four .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .five .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .six .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .seven .content-section-a h2 {
-    font-size: 18px;
+  .principal .three .card-a .content-select {
+    width: 220px;
   }
 
   .principal .seven .img-viaje {
-    height: 120px;
+    height: 100px;
+    width: 100px;
   }
 
   .principal .seven .text-viaje .texto h5 {
-    font-size: 12px;
-    width: 90px;
-  }
-
-  .principal .seven .text-viaje .form-check-input {
-    margin-top: 0.0rem;
-  }
-
-  .principal .eight .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .nine .continue {
-    margin-left: -50px !important;
-  }
-
-  .principal .nine .content-section-a h2 {
-    font-size: 22px;
-  }
-
-  .principal .nine .card-a .content-section-a .card-checkbox-a {
-    padding-left: 0;
+    width: 95px;
+    padding: 7px;
     font-size: 12px;
   }
 
-  .principal .nine .card-a .content-section-a .card-checkbox-b {
-    padding-left: 0;
-    font-size: 12px;
+  .principal .seven .section-before-after {
+    margin-top: -40px;
   }
 
-  .principal .nine .card-b .servicios {
-    display: none !important;
-  }
-
-  .principal .ten .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .ten .content-section-a h3 {
-    font-size: 14px;
-  }
-
-  .principal .ten .content-section-a h4 {
-    font-size: 12px;
-  }
-
-  /*end body*/
-
-  /*start footer*/
-
-  footer .content-img {
+  .principal footer .content-img {
     height: 130px;
     width: 130px;
   }
 
-  footer h5 {
+  .principal footer h5 {
     font-size: 12px;
   }
-
-  /*end footer header*/
 }
 
-@media screen and (max-width: 767px) and (min-width: 480px) {
+@media screen and (max-width: 767px) and (min-width: 522px) {
   /*start header*/
 
   header .logo-falabella {
@@ -893,22 +981,51 @@ footer .content-img {
 
   .principal {
     height: 500px;
+    /*start footer*/
+    /*end footer*/
+  }
+
+  .principal h2 {
+    font-size: 15px !important;
+    text-align: center;
   }
 
   .principal .content-select {
-    width: 200px !important;
+    width: 100% !important;
+    text-align: -webkit-center;
   }
 
   .principal .content-select .form-control {
     font-size: 14px;
+    width: 180px;
+  }
+
+  .principal .before button,
+  .principal .after button {
+    font-size: 12px;
   }
 
   .principal .content-section-a h2 {
     font-size: 18px;
   }
 
-  .principal .card-a h2 {
-    font-size: 18px;
+  .principal .section-flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .principal .card-a {
+    text-align: -webkit-center;
+    width: 100%;
+    height: auto;
+  }
+
+  .principal .card-b {
+    width: 180px;
+    height: 180px;
   }
 
   .principal .one h1 {
@@ -923,81 +1040,54 @@ footer .content-img {
     font-size: 13px;
   }
 
-  .principal .three .content-section-a h2 {
-    font-size: 18px;
+  .principal .two .card-a {
+    width: 200px;
   }
 
-  .principal .four .content-section-a h2 {
-    font-size: 18px;
+  .principal .two .card-a .content-section-a .content-input {
+    width: 200px;
+    text-align: -webkit-center;
   }
 
-  .principal .five .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .six .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .seven .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .seven .img-viaje {
-    height: 120px;
-  }
-
-  .principal .seven .text-viaje .texto h5 {
+  .principal .two .card-a .content-section-a .content-input input {
     font-size: 12px;
-    width: 100px;
+    width: 180px !important;
+    height: auto;
   }
 
-  .principal .eight .content-section-a h2 {
-    font-size: 18px;
+  .principal .three .card-a {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
-  .principal .nine .content-section-a h2 {
-    font-size: 22px;
+  .principal .three .card-a .content-select {
+    width: 200px;
+    float: left;
   }
 
-  .principal .nine .card-a .content-section-a .card-checkbox-a {
-    padding-left: 0;
-    font-size: 12px;
+  .principal .five .card-a {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
-  .principal .nine .card-a .content-section-a .card-checkbox-b {
-    padding-left: 0;
+  .principal .five .card-b {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .principal .five #startDate {
     font-size: 12px;
   }
 
-  .principal .nine .card-b .servicios {
-    display: none !important;
-  }
-
-  .principal .ten .content-section-a h2 {
-    font-size: 18px;
-  }
-
-  .principal .ten .content-section-a h3 {
-    font-size: 14px;
-  }
-
-  .principal .ten .content-section-a h4 {
-    font-size: 12px;
-  }
-
-  /*end body*/
-
-  /*start footer*/
-
-  footer .content-img {
+  .principal footer .content-img {
     height: 130px;
     width: 130px;
   }
 
-  footer h5 {
+  .principal footer h5 {
     font-size: 12px;
   }
-
-  /*end footer header*/
 }
