@@ -367,10 +367,6 @@ a:link {
   padding-bottom: 10px;
 }
 
-.principal .seven .section-before-after {
-  margin-top: -48px;
-}
-
 .principal .seven .seven-card-a,
 .principal .seven .seven-card-b {
   width: 50%;
@@ -388,6 +384,7 @@ a:link {
 
 .principal .seven .img-viaje {
   height: 200px;
+  width: 250px;
 }
 
 .principal .seven .text-viaje {
@@ -417,6 +414,12 @@ a:link {
   width: 100%;
   height: 100%;
   display: initial;
+}
+
+.principal .seven .pareja,
+.principal .seven .familia,
+.principal .seven .amigos {
+  display: none;
 }
 
 .principal .eight .card-a {
@@ -580,7 +583,8 @@ a:link {
 
 .three div.content-section-a > div > select,
 .four div.content-section-a > div > select,
-.eight div.content-section-a > div > select {
+.eight div.content-section-a > div > select,
+.seven #viaje {
   border-radius: 20px;
   border: 2px solid #00B300;
 }
@@ -625,6 +629,16 @@ a:link {
 .form-control:focus {
   -webkit-box-shadow: 0 0 0 0.1rem #00b300;
   box-shadow: 0 0 0 0.1rem #00b300;
+}
+
+.destock,
+.mobile {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile {
+  display: none;
 }
 
 footer {
@@ -985,6 +999,14 @@ footer .content-img {
     /*end footer*/
   }
 
+  .principal .destock {
+    display: none;
+  }
+
+  .principal .mobile {
+    display: block;
+  }
+
   .principal h2 {
     font-size: 15px !important;
     text-align: center;
@@ -1044,6 +1066,10 @@ footer .content-img {
     width: 200px;
   }
 
+  .principal .two .card-a h2 {
+    text-align: center;
+  }
+
   .principal .two .card-a .content-section-a .content-input {
     width: 200px;
     text-align: -webkit-center;
@@ -1080,6 +1106,33 @@ footer .content-img {
 
   .principal .five #startDate {
     font-size: 12px;
+  }
+
+  .principal .five .input-group {
+    width: 200px !important;
+    margin: auto;
+  }
+
+  .principal .six .content-section-a {
+    width: 200px !important;
+  }
+
+  .principal .seven .destock .section-before-after {
+    margin-top: -40px;
+  }
+
+  .principal .seven .mobile .section-before-after {
+    margin-top: -2px;
+  }
+
+  .principal .seven .mobile .card-b {
+    width: 150px;
+    height: 150px;
+  }
+
+  .principal .seven .mobile .card-b .img-viaje {
+    width: 150px;
+    height: 150px;
   }
 
   .principal footer .content-img {

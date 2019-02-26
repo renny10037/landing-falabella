@@ -26,7 +26,7 @@
 		</div>
 	</header><!-- /header -->
 	<div class="principal slider">
-		<!--<section class="one contenedor">
+		<!-- <section class="one contenedor">
 			<div class="container">
 				<div class="section-flex">
 					<div class="card-a">
@@ -217,40 +217,41 @@
 		</section>
 		<section class="seven contenedor">
 			<div class="container">
+				<div class="destock">
 					<h2>¿Con quiénes Viajas?:</h2>
-				<div class="section-flex">
-					<div class="seven-card-a">
-						<div class="seven-card-a-content-a">
-							<div class="img-viaje">
-								<label for="familia">
-									<img for="familia" src="assets/img/familia.jpg" alt="">
-								</label>
-							</div>
-							<div class="text-viaje">
-								<div class="texto form-check">
+					<div class="section-flex">
+						<div class="seven-card-a">
+							<div class="seven-card-a-content-a">
+								<div class="img-viaje">
 									<label for="familia">
-										<h5 for="familia"><input class="form-check-input" type="radio" name="viaje" id="familia" value="familia">FAMILIA</h5>
+										<img for="familia" src="assets/img/familia.jpg" alt="">
 									</label>
 								</div>
+								<div class="text-viaje">
+									<div class="texto form-check">
+										<label for="familia">
+											<h5 for="familia"><input class="form-check-input" type="radio" name="viaje" id="familia" value="familia">FAMILIA</h5>
+										</label>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="seven-card-a-content-b">
-							<div class="img-viaje">
-								<label for="amigos">
-									<img for="amigos" src="assets/img/amigos.jpg" alt="">
-								</label>
-							</div>
-							<div class="text-viaje">
-								<div class="texto form-check">
+							<div class="seven-card-a-content-b">
+								<div class="img-viaje">
 									<label for="amigos">
-										<h5 for="amigos"><input class="form-check-input" type="radio" name="viaje" id="amigos" value="option1">AMIGOS</h5>
+										<img for="amigos" src="assets/img/amigos.jpg" alt="">
 									</label>
+								</div>
+								<div class="text-viaje">
+									<div class="texto form-check">
+										<label for="amigos">
+											<h5 for="amigos"><input class="form-check-input" type="radio" name="viaje" id="amigos" value="option1">AMIGOS</h5>
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="seven-card-b">
-						<div class="seven-card-b-content-a">
+						<div class="seven-card-b">
+							<div class="seven-card-b-content-a">
 								<div class="img-viaje">
 									<label for="pareja">
 										<img for="pareja" src="assets/img/pareja.jpg" alt="">
@@ -280,14 +281,45 @@
 							</div>
 						</div>
 					</div>
-			<div class="section-before-after">
-				<div class="before">
-          <button type="button" class="btn slick-previous">Anterior</button>    
-        </div>
-				<div class="after">
-          <button type="button" class="btn slick-next">Continuar</button>
-        </div>
-			</div>
+				</div>
+				<div class="mobile">
+					<div class="section-flex">
+						<div class="card-b">
+							<div class="img-viaje solo">
+								<img src="assets/img/solo.jpg" alt="">
+							</div>
+							<div class="img-viaje pareja">
+								<img src="assets/img/pareja.jpg" alt="">
+							</div>
+							<div class="img-viaje familia">
+								<img src="assets/img/familia.jpg" alt="">
+							</div>
+							<div class="img-viaje amigos">
+								<img src="assets/img/amigos.jpg" alt="">
+							</div>
+						</div>
+						<div class="card-a">
+							<div class="content-section-a">
+								<h2>¿Con quiénes Viajas?:</h2>
+								<div class="form-group content-select">
+									<select id="viaje" class="form-control">
+										<option value="Solo">Solo</option>
+										<option value="Pareja">Pareja</option>
+										<option value="Familia">Familia</option>
+										<option value="Amigos">Amigos</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-before-after">
+					<div class="before">
+						<button type="button" class="btn slick-previous">Anterior</button>    
+					</div>
+					<div class="after">
+						<button type="button" class="btn slick-next">Continuar</button>
+					</div>
 				</div>
 		</section> 
 		<section class="eight contenedor">
@@ -324,7 +356,7 @@
 	        </div>
 				</div>
 			</div>
-		</section>-->
+		</section> -->
 		<section class="nine contenedor">
 			<div class="container">
 				<div class="section-flex">
@@ -389,7 +421,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section class="ten contenedor">
+		<section class="ten contenedor">
 			<div class="container">
 				<div class="row">
 					<div class="card-a col-sm-7 col-md-7 col-lg-8">
@@ -409,7 +441,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section> --> 
 	</div>
 	<footer>
 		<h3>Más razones para viajar con nsotros!</h3>
@@ -486,5 +518,35 @@
             }
         });
     </script>
+    <script type="text/javascript">
+    		
+    	$( function() {
+    	    $("#viaje").change( function() {
+    	        if ($(this).val() === "Solo") {
+    	        	  $(".mobile .solo").css("display", "block");
+    	        	  $(".mobile .pareja").css("display", "none");
+    	        	  $(".mobile .amigos").css("display", "none");
+    	        	  $(".mobile .familia").css("display", "none");
+    	        }else if ($(this).val() === "Pareja") {
+    	            $(".mobile .solo").css("display", "none");
+    	            $(".mobile .pareja").css("display", "block");
+    	            $(".mobile .amigos").css("display", "none");
+    	            $(".mobile .familia").css("display", "none");
+    	        }
+    	        else if ($(this).val() === "Familia") {
+    	        	$(".mobile .solo").css("display", "none");
+    	        	$(".mobile .pareja").css("display", "none");
+    	        	$(".mobile .amigos").css("display", "none");
+    	        	$(".mobile .familia").css("display", "block");
+    	        }
+    	        else if ($(this).val() === "Amigos") {
+    	        	$(".mobile .solo").css("display", "none");
+    	        	$(".mobile .pareja").css("display", "none");
+    	        	$(".mobile .amigos").css("display", "block");
+    	        	$(".mobile .familia").css("display", "none");
+    	        }
+    	    });
+    	});
+    	</script>
 </body>
 </html>
