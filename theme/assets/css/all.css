@@ -422,6 +422,10 @@ a:link {
   display: none;
 }
 
+.principal .seven .section-before-after {
+  margin-top: -48px;
+}
+
 .principal .eight .card-a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,6 +476,23 @@ a:link {
   height: 90%;
 }
 
+.principal .nine h2 {
+  color: #00B300;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.principal .nine .flex-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .principal .nine .card-a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,6 +505,7 @@ a:link {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 50%;
 }
 
 .principal .nine .card-a .content-section-a {
@@ -505,13 +527,6 @@ a:link {
   color: #5a5858;
 }
 
-.principal .nine .card-a h2 {
-  color: #00B300;
-  font-weight: bold;
-  font-size: 25px;
-  padding-bottom: 10px;
-}
-
 .principal .nine .card-a .from-control {
   border-radius: 20px;
   border: 2px solid #00B300;
@@ -519,6 +534,10 @@ a:link {
 
 .principal .nine .card-a .content-select {
   width: 400px;
+}
+
+.principal .nine .section-before-after {
+  margin-top: -48px;
 }
 
 .principal .ten .card-a {
@@ -701,6 +720,35 @@ footer .content-img {
 
 /*end responsive 522-0*/
 
+@media screen and (max-width: 690px) {
+  .principal .nine .section-flex {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+
+  .principal .nine .section-flex .card-a {
+    width: 100%;
+  }
+
+  .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  .principal .nine .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-a {
+    width: 250px;
+  }
+
+  .principal .nine .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-b {
+    width: 250px;
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 522px) {
   /*start header*/
 
@@ -857,7 +905,15 @@ footer .content-img {
   }
 
   .principal .seven .section-before-after {
-    margin-top: -45px;
+    margin-top: -38px;
+  }
+
+  .principal .nine .card-a {
+    width: 100%;
+  }
+
+  .principal .nine .section-before-after {
+    margin-top: -38px;
   }
 
   /*end body*/
@@ -965,6 +1021,13 @@ footer .content-img {
 
   .principal .seven .section-before-after {
     margin-top: -40px;
+  }
+
+  .principal .nine .flex-checkbox {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 12px;
   }
 
   .principal footer .content-img {
@@ -1122,7 +1185,7 @@ footer .content-img {
   }
 
   .principal .seven .mobile .section-before-after {
-    margin-top: -2px;
+    margin-top: -2px !important;
   }
 
   .principal .seven .mobile .card-b {
@@ -1133,6 +1196,26 @@ footer .content-img {
   .principal .seven .mobile .card-b .img-viaje {
     width: 150px;
     height: 150px;
+  }
+
+  .principal .nine .section-flex .card-a {
+    width: 100%;
+  }
+
+  .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size: 13px;
+  }
+
+  .principal .nine .section-flex .card-a .card-checkbox-b {
+    padding-left: 10px;
+  }
+
+  .principal .nine .section-flex .card-b {
+    display: none;
   }
 
   .principal footer .content-img {

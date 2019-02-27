@@ -327,6 +327,7 @@ a:link{text-decoration:none;}
 		    & .form-check-input {
   				margin-top: 0.2rem;
   			}
+  		
 		}
 		& label{
 			width: 100%;
@@ -334,6 +335,9 @@ a:link{text-decoration:none;}
 			display: initial;
 		}
 		& .pareja,& .familia,& .amigos{display: none;}
+		& .section-before-after{
+			margin-top: -48px;
+		}
 	}
 
 	.eight{
@@ -380,11 +384,24 @@ a:link{text-decoration:none;}
 		}
 	}
 	.nine{
+		h2{
+			color: $green-background;
+			font-weight: bold;
+			font-size: 25px;
+			padding-bottom: 10px;
+
+		}
+		& .flex-checkbox{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
 		& .card-a{
 			display: flex;
 			    justify-content: center;
 			    align-items: center;
 			    flex-wrap: wrap;
+			    width: 50%;
 			    & .content-section-a{
 			    	width: 100%;
 			    	text-align: left;
@@ -403,13 +420,7 @@ a:link{text-decoration:none;}
 						
 					}
 			    }
-			h2{
-				color: $green-background;
-				font-weight: bold;
-				font-size: 25px;
-				padding-bottom: 10px;
-
-			}
+			
 			& .from-control{
 					border-radius: 20px;
 					border: 2px solid $green-background;	
@@ -420,6 +431,9 @@ a:link{text-decoration:none;}
 				
 				
 			}
+		}
+		& .section-before-after{
+			margin-top: -48px;
 		}
 	}
 
@@ -642,7 +656,15 @@ footer{
  			    font-size: 14px;
  			}
  			& .section-before-after{
- 				margin-top: -45px;
+ 				margin-top: -38px;
+ 			}
+ 		}
+ 		& .nine{
+ 			& .card-a{
+ 				width: 100%;
+ 			}
+ 			& .section-before-after{
+ 				margin-top: -38px;
  			}
  		}
 
@@ -759,6 +781,12 @@ footer{
 			}
 			& .section-before-after{
 				margin-top: -40px;
+			}
+		}
+		& .nine{
+			& .flex-checkbox{
+				justify-content: flex-start;
+				font-size: 12px;
 			}
 		}
 
@@ -906,7 +934,7 @@ footer{
 			}
 			& .mobile{
 				& .section-before-after{
-					margin-top: -2px;
+					margin-top: -2px !important;
 				}
 
 				& .card-b{
@@ -918,6 +946,27 @@ footer{
 					}
 				}
 			}
+		}
+		& .nine{
+			& .section-flex{
+				& .card-a{
+					width: 100%;
+					& .content-section-a{
+						& .flex-checkbox{
+							justify-content: space-around;
+							flex-wrap: nowrap;
+							font-size: 13px;
+						}
+					}
+					& .card-checkbox-b{
+						padding-left: 10px;
+					}
+				}
+				& .card-b{
+					display: none;
+				}
+			}
+
 		}
 
 		/*start footer*/
@@ -935,6 +984,43 @@ footer{
 		/*end footer*/
 	}
 }
+
+@media screen and (max-width: 690px){
+	.principal{
+		& .nine{
+			& .section-flex{
+				justify-content: flex-start !important;
+				align-items: flex-start !important;
+				& .card-a{
+					width: 100%;
+					& .content-section-a{
+						& .flex-checkbox{
+							flex-wrap: wrap !important;
+							&{
+								& .card-checkbox-a{
+									width: 250px;
+								}
+								& .card-checkbox-b{
+									width: 250px;
+									padding-left: 0;
+								}
+							}
+						}
+					}
+				}
+				& .card-b{
+
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+
 
 /*end responsive 767-522*/
 

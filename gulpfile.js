@@ -51,7 +51,7 @@ gulp.task('js', function() {
 
 gulp.task('html', () => {
   return gulp.src('development/**/*.html') 
-    //.pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('theme/'))
 });
 
