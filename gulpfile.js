@@ -23,7 +23,7 @@ gulp.task('scss', function() {
 	    browsers: ['last 5 versions'],
 	    cascade: true
 	}))
-	.pipe(gcmq())
+	//.pipe(gcmq())
 	.pipe(concat('all.css'))
 	//.pipe(cssnano())
 	.pipe(gulp.dest('theme/assets/css/'))

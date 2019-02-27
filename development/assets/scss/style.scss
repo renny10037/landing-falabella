@@ -619,6 +619,7 @@ footer{
  					}
  					& button{
  						font-size:13px;
+ 						margin-bottom: 10px;
  					}
  				}
  		& .one{}
@@ -748,6 +749,7 @@ footer{
 			}
 			& button{
 				font-size:13px;
+				margin-bottom: 10px;
 			}
 		}
 
@@ -892,6 +894,7 @@ footer{
 			}
 			& button{
 				font-size:13px;
+				margin-bottom: 10px;
 			}
 		} 
 		& .two{
@@ -1016,7 +1019,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 690px){
+@media screen and (max-width: 690px) {
 	.principal{
 		& .nine{
 			& .section-flex{
@@ -1060,6 +1063,9 @@ footer{
 
 	/*start header*/
  	header{
+ 		margin: 10px 0 !important;
+ 		flex-wrap: wrap;
+ 		padding: 0 !important;
  		& .logo-falabella{
  			width: 200px;
  			height: 60px;
@@ -1068,30 +1074,26 @@ footer{
  			font-size: 14px;
  		}
  	}
-	/*end header*/s
+	/*end header*/
 
 	/*start body*/
 	.principal{
-		height: 800px;
-		padding: 5px!important;
-		& .section-flex{
-			display: flex;
-			justify-content: center;
-			align-items: start;
-			height:100%;
-		}
-		& .contenedor{
-			
-			
+		& .slick-list.draggable{
+			padding: 0px !important;
+			& .contenedor{
 
+			}
 		}
-		& .one{
-			& h1{
-				font-size: 20px;
-			}
-			& h1{
-				font-size: 17px;
-			}
+		height: 500px;
+		padding: 20px;
+		& .contenedor{
+			padding: 20px 0;
+		}
+
+
+		& .section-flex{
+			align-items: center;
+			height:95%;
 		}
 		& .section-flex{
 			flex-wrap:wrap;
@@ -1105,18 +1107,42 @@ footer{
 		& .card-b{
 			width: 180px;
 			align-items: flex-start;
-			height: 100%;
+			height: auto;
+		}
+		& h2{
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+		& .content-select {
+		    width: 200px !important;
+		    float: initial !important;
+		    margin: auto;
+		}
+
+		& .contenedor{
+			
+			
+
 		}
 		& .one{
-			
-		} 
+			& h1{
+				font-size: 25px;
+			}
+			& h3{
+				font-size: 19px;
+			}
+			& .btn-one{
+				background: $green-background;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 14px;
+				margin-bottom: 10px;
+			}
+		}
 		& .two{
 			& .card-a{
 				width: auto;
 				& .content-section-a{
-					& h2{
-						text-align: center;
-					}
 					& .content-input{
 						width: 100%;
 						text-align: -webkit-center;
@@ -1138,9 +1164,9 @@ footer{
 
 		/*start footer*/
 		footer{
-			.content-img {
-			    height: 130px;
-			    width: 130px;
+			& .content-img {
+			    height: 120px !important;
+			    width: 120px !important;
 			     
 			  }
 			& h5{
