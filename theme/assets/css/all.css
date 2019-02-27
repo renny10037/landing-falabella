@@ -301,7 +301,7 @@ a:link {
   .principal .seven .pareja, .principal .seven .familia, .principal .seven .amigos {
     display: none; }
   .principal .seven .section-before-after {
-    margin-top: -48px; }
+    margin-top: 2px; }
   .principal .eight .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -335,7 +335,8 @@ a:link {
       float: right; }
   .principal .eight img {
     width: 100%;
-    height: 90%; }
+    height: 90%;
+    cursor: pointer; }
   .principal .nine h2 {
     color: #00B300;
     font-weight: bold;
@@ -427,6 +428,9 @@ a:link {
 .three div.content-section-a > div > select, .four div.content-section-a > div > select, .eight div.content-section-a > div > select, .seven #viaje {
   border-radius: 20px;
   border: 2px solid #00B300; }
+
+.gj-picker-bootstrap table tr td.disabled div, .gj-picker-bootstrap table tr td.other-month div {
+  color: #e4dddd; }
 
 .section-before-after {
   display: -webkit-box;
@@ -530,7 +534,7 @@ footer {
       padding: 5px;
       font-size: 14px; }
     .principal .seven .section-before-after {
-      margin-top: -38px; }
+      margin-top: 2px; }
     .principal .nine .card-a {
       width: 100%; }
     .principal .nine .section-before-after {
@@ -598,7 +602,7 @@ footer {
       padding: 7px;
       font-size: 12px; }
     .principal .seven .section-before-after {
-      margin-top: -40px; }
+      margin-top: -1px; }
     .principal .nine .flex-checkbox {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -699,16 +703,14 @@ footer {
       margin: auto; }
     .principal .six .content-section-a {
       width: 200px !important; }
-    .principal .seven .destock .section-before-after {
-      margin-top: -40px; }
-    .principal .seven .mobile .section-before-after {
-      margin-top: -2px !important; }
     .principal .seven .mobile .card-b {
       width: 150px;
       height: 150px; }
       .principal .seven .mobile .card-b .img-viaje {
         width: 150px;
         height: 150px; }
+    .principal .seven .section-before-after {
+      margin-top: -2px !important; }
     .principal .nine .section-flex .card-a {
       width: 100%; }
       .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
@@ -722,7 +724,7 @@ footer {
     .principal .nine .section-flex .card-b {
       display: none; }
     .principal .ten .card-a {
-      width: 100%; }
+      width: 100% !important; }
       .principal .ten .card-a .content-section-a h2, .principal .ten .card-a .content-section-a h3 {
         font-size: 12px; }
     .principal .ten .card-b {
@@ -828,6 +830,42 @@ footer {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
+    .principal .five .card-a {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .principal .seven .destock {
+      display: none; }
+    .principal .seven .mobile {
+      display: block; }
+    .principal .seven .img-viaje {
+      width: 150px;
+      height: 150px; }
+    .principal .seven .pareja, .principal .seven .familia, .principal .seven .amigos {
+      display: none; }
+    .principal .seven .section-before-after {
+      margin-top: -21px; }
+    .principal .nine .section-flex .card-a {
+      width: 100%; }
+      .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        font-size: 12px; }
+    .principal .nine .section-flex .card-b {
+      width: 100% !important;
+      top: 0;
+      margin-top: -50px; }
+      .principal .nine .section-flex .card-b .servicios {
+        width: 120px;
+        height: 120px; }
+    .principal .ten .section-flex .card-a {
+      width: 70%; }
+      .principal .ten .section-flex .card-a h2 {
+        font-size: 18px !important; }
+      .principal .ten .section-flex .card-a h3, .principal .ten .section-flex .card-a h4 {
+        font-size: 15px; }
     .principal footer .content-img {
       height: 120px !important;
       width: 120px !important; }
