@@ -552,6 +552,7 @@ a:link {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 30%;
 }
 
 .principal .ten .card-a .content-section-a {
@@ -763,15 +764,16 @@ footer .content-img {
 
   /*end header*/
 
-  /*start body*/
-
-  .principal {
+  s
+.principal {
     height: 800px;
     padding: 5px !important;
+    /*start footer*/
     /*end footer*/
   }
 
-  .principal .section-flex {
+  s
+.principal .section-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -784,15 +786,18 @@ footer .content-img {
     height: 100%;
   }
 
-  .principal .one h1 {
+  s
+.principal .one h1 {
     font-size: 20px;
   }
 
-  .principal .one h1 {
+  s
+.principal .one h1 {
     font-size: 17px;
   }
 
-  .principal .section-flex {
+  s
+.principal .section-flex {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -800,13 +805,15 @@ footer .content-img {
     justify-content: center;
   }
 
-  .principal .card-a {
+  s
+.principal .card-a {
     text-align: center;
     width: 100%;
     height: auto;
   }
 
-  .principal .card-b {
+  s
+.principal .card-b {
     width: 180px;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -814,36 +821,43 @@ footer .content-img {
     height: 100%;
   }
 
-  .principal .two .card-a {
+  s
+.principal .two .card-a {
     width: auto;
   }
 
-  .principal .two .card-a .content-section-a h2 {
+  s
+.principal .two .card-a .content-section-a h2 {
     text-align: center;
   }
 
-  .principal .two .card-a .content-section-a .content-input {
+  s
+.principal .two .card-a .content-section-a .content-input {
     width: 100%;
     text-align: -webkit-center;
   }
 
-  .principal .two .card-a .content-section-a .content-input input {
+  s
+.principal .two .card-a .content-section-a .content-input input {
     font-size: 12px;
     width: 200px;
   }
 
-  .principal .three .card-a {
+  s
+.principal .three .card-a {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
 
-  .principal footer .content-img {
+  s
+.principal footer .content-img {
     height: 130px;
     width: 130px;
   }
 
-  .principal footer h5 {
+  s
+.principal footer h5 {
     font-size: 12px;
   }
 }
@@ -914,6 +928,10 @@ footer .content-img {
 
   .principal .nine .section-before-after {
     margin-top: -38px;
+  }
+
+  .principal .ten .card-a {
+    width: 50%;
   }
 
   /*end body*/
@@ -1028,6 +1046,15 @@ footer .content-img {
     -ms-flex-pack: start;
     justify-content: flex-start;
     font-size: 12px;
+  }
+
+  .principal .ten .card-a {
+    width: 70%;
+  }
+
+  .principal .ten .card-a h3,
+  .principal .ten .card-a h4 {
+    font-size: 14px !important;
   }
 
   .principal footer .content-img {
@@ -1216,6 +1243,20 @@ footer .content-img {
 
   .principal .nine .section-flex .card-b {
     display: none;
+  }
+
+  .principal .ten .card-a {
+    width: 100%;
+  }
+
+  .principal .ten .card-a .content-section-a h2,
+  .principal .ten .card-a .content-section-a h3 {
+    font-size: 12px;
+  }
+
+  .principal .ten .card-b {
+    width: 100px;
+    height: 100px;
   }
 
   .principal footer .content-img {

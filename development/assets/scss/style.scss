@@ -443,6 +443,7 @@ a:link{text-decoration:none;}
 			    justify-content: center;
 			    align-items: center;
 			    flex-wrap: wrap;
+			    width: 30%;
 			    & .content-section-a{
 			    	width: 100%;
 			    	text-align: left;
@@ -667,6 +668,11 @@ footer{
  				margin-top: -38px;
  			}
  		}
+ 		& .ten {
+ 			& .card-a{
+ 				width: 50%;
+ 			}
+ 		}
 
  	}
  		
@@ -789,7 +795,16 @@ footer{
 				font-size: 12px;
 			}
 		}
+		& .ten{
+			& .card-a{
+				width: 70%;
+				& h3, & h4{
 
+					font-size: 14px !important;
+
+				}
+			}
+		}
 
 
 		/*start footer*/
@@ -968,6 +983,22 @@ footer{
 			}
 
 		}
+		& .ten{
+			& .card-a{
+				width: 100%;
+				& .content-section-a{
+					& h2, & h3{
+						font-size: 12px;
+					}
+				}
+			}
+			& .card-b{
+				width: 100px;
+				height: 100px;
+			}
+		}
+		
+		
 
 		/*start footer*/
 		footer{
@@ -1037,7 +1068,7 @@ footer{
  			font-size: 14px;
  		}
  	}
-	/*end header*/
+	/*end header*/s
 
 	/*start body*/
 	.principal{
@@ -1104,7 +1135,7 @@ footer{
 			}
 		}
 
-		& 
+
 		/*start footer*/
 		footer{
 			.content-img {
