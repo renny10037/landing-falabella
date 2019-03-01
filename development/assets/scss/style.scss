@@ -14,6 +14,7 @@ body{
 }
 a{text-decoration: none;}
 a:link{text-decoration:none;}
+.emoticono{color: gray;}
 .header{
 	font-family: 'Lato', sans-serif;
 	width: 100%;
@@ -519,12 +520,15 @@ a:link{text-decoration:none;}
 	}
 }
 .after{
-	
+	display: none;
 	& button{
 	color:$green-background;
 	background: transparent;
 	border: none;
 	}
+}
+#startDate,#endDate{
+	background: white;
 }
 .btn.focus, .btn:focus {
     box-shadow: none;
@@ -801,6 +805,9 @@ footer{
 				justify-content: flex-start;
 				font-size: 12px;
 			}
+			& .section-before-after{
+				margin-top: -36px;
+			}
 		}
 		& .ten{
 			& .card-a{
@@ -856,6 +863,12 @@ footer{
 		.mobile{
 			display: block;
 		}
+		.seven-after-mobile{
+			display: block;
+		}
+		.seven-after-destock{
+			display: none;
+		}
 		& h2{
 			font-size: 15px !important;
 			text-align: center;
@@ -865,7 +878,7 @@ footer{
 		text-align: -webkit-center;
 			& .form-control{
 				font-size: 14px;
-				width: 180px;
+				width: 200px;
 			}
 		}
 		.before button,.after button{
@@ -939,7 +952,7 @@ footer{
 				order: 1;
 			}
 			& #startDate{
-				font-size: 12px;
+				font-size: 14px;
 			}
 			& .input-group { width: 200px!important; margin: auto; }
 
@@ -983,6 +996,9 @@ footer{
 				& .card-b{
 					display: none;
 				}
+			}
+			& .section-before-after{
+				margin-top: -34px;
 			}
 
 		}
@@ -1072,6 +1088,11 @@ footer{
  		}
  		& .information{
  			font-size: 14px;
+ 			width: 100%;
+ 			text-align: center;
+ 			text-align: -webkit-center;
+ 			text-align: -moz-center;
+ 			text-align: -o-center;
  		}
  	}
 	/*end header*/
@@ -1083,6 +1104,12 @@ footer{
 			& .contenedor{
 
 			}
+		}
+		.seven-after-mobile{
+			display: block;
+		}
+		.seven-after-destock{
+			display: none;
 		}
 		height: 500px;
 		padding: 20px;
@@ -1240,3 +1267,10 @@ footer{
 }
 
 /*end responsive 522-0*/
+@media screen and (max-width: 374px) {
+	& .nine{
+		& .section-before-after{
+			margin-top: -50px !important;
+		}
+	}
+}

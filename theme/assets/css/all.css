@@ -20,6 +20,9 @@ a {
 a:link {
   text-decoration: none; }
 
+.emoticono {
+  color: gray; }
+
 .header {
   font-family: 'Lato', sans-serif;
   width: 100%;
@@ -445,10 +448,15 @@ a:link {
   background: transparent;
   border: none; }
 
-.after button {
-  color: #00B300;
-  background: transparent;
-  border: none; }
+.after {
+  display: none; }
+  .after button {
+    color: #00B300;
+    background: transparent;
+    border: none; }
+
+#startDate, #endDate {
+  background: white; }
 
 .btn.focus, .btn:focus {
   -webkit-box-shadow: none;
@@ -608,6 +616,8 @@ footer {
           -ms-flex-pack: start;
               justify-content: flex-start;
       font-size: 12px; }
+    .principal .nine .section-before-after {
+      margin-top: -36px; }
     .principal .ten .card-a {
       width: 70%; }
       .principal .ten .card-a h3, .principal .ten .card-a h4 {
@@ -637,6 +647,10 @@ footer {
       display: none; }
     .principal .mobile {
       display: block; }
+    .principal .seven-after-mobile {
+      display: block; }
+    .principal .seven-after-destock {
+      display: none; }
     .principal h2 {
       font-size: 15px !important;
       text-align: center; }
@@ -645,7 +659,7 @@ footer {
       text-align: -webkit-center; }
       .principal .content-select .form-control {
         font-size: 14px;
-        width: 180px; }
+        width: 200px; }
     .principal .before button, .principal .after button {
       font-size: 12px; }
     .principal .content-section-a h2 {
@@ -697,7 +711,7 @@ footer {
           -ms-flex-order: 1;
               order: 1; }
     .principal .five #startDate {
-      font-size: 12px; }
+      font-size: 14px; }
     .principal .five .input-group {
       width: 200px !important;
       margin: auto; }
@@ -723,6 +737,8 @@ footer {
         padding-left: 10px; }
     .principal .nine .section-flex .card-b {
       display: none; }
+    .principal .nine .section-before-after {
+      margin-top: -34px; }
     .principal .ten .card-a {
       width: 100% !important; }
       .principal .ten .card-a .content-section-a h2, .principal .ten .card-a .content-section-a h3 {
@@ -768,7 +784,12 @@ footer {
       width: 200px;
       height: 60px; }
     header .information {
-      font-size: 14px; }
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      text-align: -webkit-center;
+      text-align: -moz-center;
+      text-align: -o-center; }
   /*end header*/
   /*start body*/
   .principal {
@@ -778,6 +799,10 @@ footer {
     /*end footer*/ }
     .principal .slick-list.draggable {
       padding: 0px !important; }
+    .principal .seven-after-mobile {
+      display: block; }
+    .principal .seven-after-destock {
+      display: none; }
     .principal .contenedor {
       padding: 20px 0; }
     .principal .section-flex {
@@ -873,3 +898,6 @@ footer {
       font-size: 12px; } }
 
 /*end responsive 522-0*/
+@media screen and (max-width: 374px) {
+  .nine .section-before-after {
+    margin-top: -50px !important; } }
