@@ -45,7 +45,7 @@ gulp.task('js', function() {
 		
   	gulp.src('development/assets/js/**/*.js') 
   	.pipe(concat('all.js'))
-	.pipe(minify())
+	//.pipe(minify())
 	.pipe(gulp.dest('theme/assets/js/'))
 });
 

@@ -71,27 +71,32 @@ $("#para-donde-quieres-ir").change( function() {
 });
 
 //
-$( function() {
-
+$( function(){
+$('#solo').attr('checked',true);
 	$("#viaje").change( function() {
 		if ($(this).val() === "Solo") {
+			$('#solo').attr('checked',true);
 			$(".mobile .solo").css("display", "block");
 			$(".mobile .pareja").css("display", "none");
 			$(".mobile .amigos").css("display", "none");
 			$(".mobile .familia").css("display", "none");
+			$(".mobile .solo").css("display", "block");
 		}else if ($(this).val() === "Pareja") {
+			$('#pareja').attr('checked',true);
 			$(".mobile .solo").css("display", "none");
 			$(".mobile .pareja").css("display", "block");
 			$(".mobile .amigos").css("display", "none");
 			$(".mobile .familia").css("display", "none");
 		}
 		else if ($(this).val() === "Familia") {
+			$('#familia').attr('checked',true);
 			$(".mobile .solo").css("display", "none");
 			$(".mobile .pareja").css("display", "none");
 			$(".mobile .amigos").css("display", "none");
 			$(".mobile .familia").css("display", "block");
 		}
 		else if ($(this).val() === "Amigos") {
+			$('#amigos').attr('checked',true);
 			$(".mobile .solo").css("display", "none");
 			$(".mobile .pareja").css("display", "none");
 			$(".mobile .amigos").css("display", "block");
@@ -162,9 +167,8 @@ $(".nine").on('click', '.custom-control-label',function() {
   	$('.nine-after').css("display","block");
   }
 });
-$('.nine-after').click(function() {
-   alert(serviciosDos);
-});
+
+
 //end validation
 //RD station
 var form = $('#conversion-form');
@@ -174,12 +178,9 @@ var selectDesdeDondePartes = form.find('select[name="desde-donde-partes"]');
 var selectParaDondequieresIr = form.find('select[name="para-donde-quieres-ir"]');
 var inputStartDate = form.find('input[name="startDate"]');
 var inputEndDate = form.find('input[name="endDate"]');
-var inputEndDate = form.find('input[name="endDate"]');
 
-var radioSolo = form.find('#solo');
-var radioPareja = form.find('#pareja');
-var radioFamilia = form.find('#Familia');
-var radioAmigos = form.find('#amigos');
+
+
 var selectConocer = form.find('select[name="conocer"]');
 
 var checkboxHospedaje = form.find('#hospedaje');
@@ -192,12 +193,22 @@ var checkboxSegurosDeviaje = form.find('#seguros-de-viaje');
 var checkboxLugaresDeInteres = form.find('#lugares-de-interes');
 var checkboxActividadesgratuitas = form.find('#actividades-gratuitas');
 
-
+// var servicios = [];
+// var aux;
+// $("input:checkbox:checked").each(function() {
+//   aux = servicios.push($(this).val());
+// });
 
 var inputToken = form.find('input[name="token_rdstation"]');
 var inputIdentificador = form.find('input[name="identificador"]');
-
+var selected = [];    
 form.on('submit', function(ev) {
+	$("input:checkbox:checked").each(function() {
+	      if (this.checked) {
+	        // agregas cada elemento.
+	        selected.push($(this).val());
+	      }
+	    });
 var data_array = [
     { name: 'nome', value: inputNombre.val() },
     { name: 'email', value: inputEmail.val() },
@@ -206,22 +217,21 @@ var data_array = [
     { name: 'Cuando te quieres ir', value: inputStartDate.val() },
     { name: 'Cuando te vas a regresar', value: inputEndDate.val() },
 
-    { name: 'Con quienes viajas', value: radioSolo.val() },
-    { name: 'Con quienes viajas', value: radioPareja.val() },
-    { name: 'Con quienes viajas', value: radioFamilia },
-    { name: 'Con quienes viajas', value: radioAmigos.val() },
+    { name: 'Con quienes viajas', value:  form.find('input:radio[name=viaje]:checked').val() },
     
     { name: 'Que tipo de viajero te consideras', value: selectConocer.val() },
 
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxHospedaje.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxAlimentacion.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxTrasladoCompartido.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxTrasladoPrivado.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxTours.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxTiquetes.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxSegurosDeviaje.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxLugaresDeInteres.val() },
-    { name: 'Que servicios quieres que incluya tu paquete', value: checkboxActividadesgratuitas.val() },
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[0]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[1]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[2]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[3]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[4]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[5]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[6]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[7]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[8]},
+    { name: "Que servicios quieres que incluya tu paquete[]", value: selected[9]},
+    
 
 
     { name: 'token_rdstation', value: inputToken.val() },
@@ -230,4 +240,4 @@ var data_array = [
 
   RdIntegration.post(data_array);
 });
-//end RD station
+//end RD statio

@@ -24,9 +24,9 @@
 			<p class=p-last><i class="fab fa-whatsapp"></i><a href="" title="">(320)8654290</a> - <i class="fas fa-map-marker-alt"></i> Sucursales</p>
 		</div>
 	</header><!-- /header -->
-	<form id="conversion-form" action="#" method="post">
+	<form id="conversion-form" action="submit.html" method="post">
 		<input type="hidden" id="token_rdstation" name="token_rdstation" value="d1a339922e0a5f4bfe98a8e6f6996394">
-		<input type="hidden" id="identificador" name="identificador" value="prueba_landing_falabella">
+		<input type="hidden" id="identificador" name="identificador" value="LP-Precotizacion">
 		<div class="principal slider">
 			 <section class="one contenedor">
 				<div class="container">
@@ -219,7 +219,7 @@
 						</div>
 					</div>
 				</div>
-			</section>  
+			</section>
 			<section class="seven contenedor">
 				<div class="container">
 					<div class="destock">
@@ -279,7 +279,7 @@
 									<div class="text-viaje">
 										<div class="texto form-check">
 											<label for="solo">
-												<h5 for="solo"><input class="form-check-input viaje" type="radio" name="viaje" id="solo" value="Solo">SOLO</h5>
+												<h5 for="solo"><input class="form-check-input viaje" type="radio" name="viaje" id="solo" value="Solo" checked="checked">SOLO</h5>
 											</label>
 										</div>
 									</div>
@@ -308,6 +308,7 @@
 									<h2>¿Con quiénes Viajas?:</h2>
 									<div class="form-group content-select">
 										<select id="viaje" class="form-control">
+
 											<option value="Solo">Solo</option>
 											<option value="Pareja">Pareja</option>
 											<option value="Familia">Familia</option>
@@ -418,6 +419,10 @@
 											<input type="checkbox" class="custom-control-input" name="servicios" id="actividades-gratuitas" value="Actividades gratuitas">
 											<label class="custom-control-label" for="actividades-gratuitas">Actividades gratuitas</label>
 										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="servicios" id="actividades-gratuitas" value="Actividades gratuitas">
+											<label class="custom-control-label" for="actividades-gratuitas">Renta de auto</label>
+										</div>
 									</div>
 
 								</div>
@@ -434,32 +439,11 @@
 							<button type="button" class="btn slick-previous">Anterior</button>  
 						</div>
 						<div class="after nine-after">
-							<button type="submit" id="submit-button" class="btn slick-next">Continuar</button>
+							<button type="submit" id="submit-button" class="btn">Continuar</button>
 						</div>
 					</div>
 				</div>
 			</section>  
-		<section class="ten contenedor">
-			<div class="container">
-				<div class="section-flex">
-					<div class="card-a">
-						<div class="content-section-a">
-							<h2>¡Listo! <span class="emoticono">😁</span></h2>
-							<h3>Utilizaremos esta información para ayudarte a planear el viaje a tu medida.</h3>
-
-							<h3>Un agente de viajes especializado se comunicará contigo in ningún costo para continuar asesorándote.</h3>
-
-							<h4>!Vuela alto y cumple tus sueños!</h4>
-						</div>
-					</div>
-					<div class="card-b">
-						<div class="listo">
-							<img src="assets/img/listo.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 	</div>
 	</form>
 	<footer>
