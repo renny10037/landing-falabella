@@ -1,113 +1,125 @@
 //slider
-	$(document).ready(function(){
-		$('.slider').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: false,
-			accessibility:false,
-			adaptiveHeight:true,
-			draggable:true,
-			arrows: true,
-			dots:false,
-			centerMode: true,
-			nextArrow: document.getElementsByClassName('slick-next'),
-			prevArrow: document.getElementsByClassName('slick-previous'),
-
-		});
-	});
-//end slider
+$(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    accessibility:false,
+    adaptiveHeight:true,
+    draggable:false,
+    arrows: true,
+    dots:false,
+    centerMode: false,
+    draggable: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    nextArrow: document.getElementsByClassName('slick-next'),
+    prevArrow: document.getElementsByClassName('slick-previous'),
+   
+  });
+});
 //datapicker
-	var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-	var start = $('#startDate').datepicker({
-		uiLibrary: 'bootstrap4',
-		iconsLibrary: 'fontawesome',
-		format: 'dd/mm/yyyy',
-		minDate: today,
-		keyboardNavigation: false,
-		maxDate: function () {
-			return $('#endDate').val();
-		}
-	});
-	$('#endDate').datepicker({
-		uiLibrary: 'bootstrap4',
-		iconsLibrary: 'fontawesome',
-		format: 'dd/mm/yyyy',
-		minDate: function () {
-			return $('#startDate').val();
-		}
-	});
+  var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+  var start = $('#startDate').datepicker({
+    uiLibrary: 'bootstrap4',
+    iconsLibrary: 'fontawesome',
+    format: 'dd/mm/yyyy',
+    minDate: today,
+    keyboardNavigation: false,
+    maxDate: function () {
+      return $('#endDate').val();
+    }
+  });
+  $('#endDate').datepicker({
+    uiLibrary: 'bootstrap4',
+    iconsLibrary: 'fontawesome',
+    format: 'dd/mm/yyyy',
+    minDate: function () {
+      return $('#startDate').val();
+    }
+  });
 //end datapicker
 //validation
 //two email
 $("#email").on("keyup", function() {
-	var _this = $('#email');
-	var _email = $('#email').val();
-	var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	var valid = re.test(_email);
-	if(valid){
-	$('.two-after').css("display","block");
-	} else {
-	$('.two-after').css("display","none");
-	}
+  var _this = $('#email');
+  var _email = $('#email').val();
+  var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  var valid = re.test(_email);
+  if(valid){
+  $('.two-after').css("display","block");
+  } else {
+  $('.two-after').css("display","none");
+  }
 });
 //theree destino
 $("#desde-donde-partes").change( function() {
-	if ($(this).val() == 'option') {
-		$('.three-after').css("display","none");
-	}
-	else {
-		$('.three-after').css("display","block");
-	}
+  if ($(this).val() == 'option') {
+    $('.three-after').css("display","none");
+  }
+  else {
+    $('.three-after').css("display","block");
+  }
 });
 
 //four destino
 $("#para-donde-quieres-ir").change( function() {
-	if ($(this).val() == 'option') {
-		$('.four-after').css("display","none");
-	}
-	else {
-		$('.four-after').css("display","block");
-	}
+  if ($(this).val() == 'option') {
+    $('.four-after').css("display","none");
+  }
+  else {
+    $('.four-after').css("display","block");
+  }
 });
+//whatsapp
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    // estamos desde un movil o tablet
+    document.getElementById('ws-destock').className = 'ws-hidden';
+  document.getElementById('ws-mobile').className = 'ws-show';
+}else{
+  document.getElementById('ws-destock').className = 'ws-show';
+  document.getElementById('ws-mobile').className = 'ws-hidden';
+}
 
 //
 $( function(){
 $('#solo').attr('checked',true);
-	$("#viaje").change( function() {
-		if ($(this).val() === "Solo") {
-			$('#solo').attr('checked',true);
-			$(".mobile .solo").css("display", "block");
-			$(".mobile .pareja").css("display", "none");
-			$(".mobile .amigos").css("display", "none");
-			$(".mobile .familia").css("display", "none");
-			$(".mobile .solo").css("display", "block");
-		}else if ($(this).val() === "Pareja") {
-			$('#pareja').attr('checked',true);
-			$(".mobile .solo").css("display", "none");
-			$(".mobile .pareja").css("display", "block");
-			$(".mobile .amigos").css("display", "none");
-			$(".mobile .familia").css("display", "none");
-		}
-		else if ($(this).val() === "Familia") {
-			$('#familia').attr('checked',true);
-			$(".mobile .solo").css("display", "none");
-			$(".mobile .pareja").css("display", "none");
-			$(".mobile .amigos").css("display", "none");
-			$(".mobile .familia").css("display", "block");
-		}
-		else if ($(this).val() === "Amigos") {
-			$('#amigos').attr('checked',true);
-			$(".mobile .solo").css("display", "none");
-			$(".mobile .pareja").css("display", "none");
-			$(".mobile .amigos").css("display", "block");
-			$(".mobile .familia").css("display", "none");
-		}
-	});
+  $("#viaje").change( function() {
+    if ($(this).val() === "Solo") {
+      $('#solo').attr('checked',true);
+      $(".mobile .solo").css("display", "block");
+      $(".mobile .pareja").css("display", "none");
+      $(".mobile .amigos").css("display", "none");
+      $(".mobile .familia").css("display", "none");
+      $(".mobile .solo").css("display", "block");
+    }else if ($(this).val() === "Pareja") {
+      $('#pareja').attr('checked',true);
+      $(".mobile .solo").css("display", "none");
+      $(".mobile .pareja").css("display", "block");
+      $(".mobile .amigos").css("display", "none");
+      $(".mobile .familia").css("display", "none");
+    }
+    else if ($(this).val() === "Familia") {
+      $('#familia').attr('checked',true);
+      $(".mobile .solo").css("display", "none");
+      $(".mobile .pareja").css("display", "none");
+      $(".mobile .amigos").css("display", "none");
+      $(".mobile .familia").css("display", "block");
+    }
+    else if ($(this).val() === "Amigos") {
+      $('#amigos').attr('checked',true);
+      $(".mobile .solo").css("display", "none");
+      $(".mobile .pareja").css("display", "none");
+      $(".mobile .amigos").css("display", "block");
+      $(".mobile .familia").css("display", "none");
+    }
+  });
 });
 
 //five startDate
  $('#startDate').change(function() { 
-     	var StartDate = $('#startDate').val();
+      var StartDate = $('#startDate').val();
           if(StartDate == '')
           {
               $('.five-after').css("display","none");
@@ -118,7 +130,7 @@ $('#solo').attr('checked',true);
 
  //six endDate
   $('#endDate').change(function() { 
-      	var EndDate = $('#endDate').val();
+        var EndDate = $('#endDate').val();
            if(EndDate == '')
            {
                $('.six-after').css("display","none");
@@ -128,27 +140,27 @@ $('#solo').attr('checked',true);
   });
 
   //seven seven-after-destock"
-  $(".seven").find('.img-viaje').click(function () {	 
-  	var viaje = $('input:radio[name=viaje]:checked').val();
-  	if (viaje =='') {
-  		('.seven-after-destock').css("display","none");
-  	}else{
-  		$('.seven-after-destock').css("display","block");
-  	}
+  $(".seven").find('.img-viaje').click(function () {   
+    var viaje = $('input:radio[name=viaje]:checked').val();
+    if (viaje =='') {
+      ('.seven-after-destock').css("display","none");
+    }else{
+      $('.seven-after-destock').css("display","block");
+    }
   });
-   $(".seven").find('.destock h5').click(function () {	 
-  	var viaje = $('input:radio[name=viaje]:checked').val();
-  	if (viaje =='') {
-  		$('.seven-after-destock').css("display","none");
-  	}else{
-  		$('.seven-after-destock').css("display","block");
-  	}
+   $(".seven").find('.destock h5').click(function () {   
+    var viaje = $('input:radio[name=viaje]:checked').val();
+    if (viaje =='') {
+      $('.seven-after-destock').css("display","none");
+    }else{
+      $('.seven-after-destock').css("display","block");
+    }
   });
 
    // eight
    //five startDate
     $('#conocer').change(function() { 
-        	var conocer = $('#conocer').val();
+          var conocer = $('#conocer').val();
              if(conocer == 'option')
              {
                  $('.eight-after').css("display","none");
@@ -161,10 +173,10 @@ $('#solo').attr('checked',true);
 $(".nine").on('click', '.custom-control-label',function() {                  
   var serviciosDos = $('input:checkbox[name=servicios]:checked').val();
   if (serviciosDos == '') {
-  	$('.nine-after').css("display","none");
-  	alert('entro en el 1');
+    $('.nine-after').css("display","none");
+    alert('entro en el 1');
   }else{
-  	$('.nine-after').css("display","block");
+    $('.nine-after').css("display","block");
   }
 });
 
@@ -203,12 +215,12 @@ var inputToken = form.find('input[name="token_rdstation"]');
 var inputIdentificador = form.find('input[name="identificador"]');
 var selected = [];    
 form.on('submit', function(ev) {
-	$("input:checkbox:checked").each(function() {
-	      if (this.checked) {
-	        // agregas cada elemento.
-	        selected.push($(this).val());
-	      }
-	    });
+  $("input:checkbox:checked").each(function() {
+        if (this.checked) {
+          // agregas cada elemento.
+          selected.push($(this).val());
+        }
+      });
 var data_array = [
     { name: 'nome', value: inputNombre.val() },
     { name: 'email', value: inputEmail.val() },
