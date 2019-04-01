@@ -47,6 +47,10 @@ a:link {
     color: #3fae2a; }
     .header .information a {
       color: #3fae2a; }
+    .header .information p a {
+      font-size: 14px; }
+    .header .information p > i {
+      font-size: 12px; }
     .header .information .fa-whatsapp {
       font-size: 17px;
       padding-right: 5px; }
