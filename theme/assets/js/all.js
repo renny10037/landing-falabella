@@ -41,6 +41,7 @@ $(document).ready(function(){
   });
 //end datapicker
 //validation
+
 //two email
 $("#email").on("keyup", function() {
   var _this = $('#email');
@@ -53,6 +54,18 @@ $("#email").on("keyup", function() {
   $('.two-after').css("display","none");
   }
 });
+
+//dos
+$("#identification").on("keyup", function() {
+  let identification = $('#identification').val();
+  let countIdentification = identification.length;
+  if((countIdentification > 7) && (countIdentification < 11)){
+  $('.dos-after').css("display","block");
+  } else {
+  $('.dos-after').css("display","none");
+  }  
+});
+
 //theree destino
 $("#desde-donde-partes").change( function() {
   if ($(this).val() == 'option') {
@@ -72,6 +85,7 @@ $("#para-donde-quieres-ir").change( function() {
     $('.four-after').css("display","block");
   }
 });
+
 //whatsapp
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     // estamos desde un movil o tablet
@@ -174,7 +188,6 @@ $(".nine").on('click', '.custom-control-label',function() {
   var serviciosDos = $('input:checkbox[name=servicios]:checked').val();
   if (serviciosDos == '') {
     $('.nine-after').css("display","none");
-    alert('entro en el 1');
   }else{
     $('.nine-after').css("display","block");
   }
@@ -186,8 +199,10 @@ $(".nine").on('click', '.custom-control-label',function() {
 var form = $('#conversion-form');
 var inputNombre = form.find('input[name="nombre"]');
 var inputEmail = form.find('input[name="email"]');
+var inputIdentification = form.find('input[name="identification"]');
 var selectDesdeDondePartes = form.find('select[name="desde-donde-partes"]');
 var selectParaDondequieresIr = form.find('select[name="para-donde-quieres-ir"]');
+var selectTipoIdentification = form.find('select[name="tipo-identification"]');
 var inputStartDate = form.find('input[name="startDate"]');
 var inputEndDate = form.find('input[name="endDate"]');
 
@@ -195,15 +210,15 @@ var inputEndDate = form.find('input[name="endDate"]');
 
 var selectConocer = form.find('select[name="conocer"]');
 
-var checkboxHospedaje = form.find('#hospedaje');
-var checkboxAlimentacion = form.find('#alimentacion');
-var checkboxTrasladoCompartido = form.find('#traslado-compartido');
-var checkboxTrasladoPrivado = form.find('#traslado-privado');
-var checkboxTours = form.find('#tours');
-var checkboxTiquetes = form.find('#tiquetes');
-var checkboxSegurosDeviaje = form.find('#seguros-de-viaje');
-var checkboxLugaresDeInteres = form.find('#lugares-de-interes');
-var checkboxActividadesgratuitas = form.find('#actividades-gratuitas');
+// var checkboxHospedaje = form.find('#hospedaje');
+// var checkboxAlimentacion = form.find('#alimentacion');
+// var checkboxTrasladoCompartido = form.find('#traslado-compartido');
+// var checkboxTrasladoPrivado = form.find('#traslado-privado');
+// var checkboxTours = form.find('#tours');
+// var checkboxTiquetes = form.find('#tiquetes');
+// var checkboxSegurosDeviaje = form.find('#seguros-de-viaje');
+// var checkboxLugaresDeInteres = form.find('#lugares-de-interes');
+// var checkboxActividadesgratuitas = form.find('#actividades-gratuitas');
 
 // var servicios = [];
 // var aux;
@@ -224,8 +239,10 @@ form.on('submit', function(ev) {
 var data_array = [
     { name: 'nome', value: inputNombre.val() },
     { name: 'email', value: inputEmail.val() },
+    { name: 'Identificación N', value: inputIdentification.val() },
     { name: 'Desde donde partes', value: selectDesdeDondePartes.val() },
     { name: 'Para donde quieres ir', value: selectParaDondequieresIr.val() },
+    { name: 'Identificación tipo', value: selectTipoIdentification.val() },
     { name: 'Cuando te quieres ir', value: inputStartDate.val() },
     { name: 'Cuando te vas a regresar', value: inputEndDate.val() },
 

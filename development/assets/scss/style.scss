@@ -128,6 +128,49 @@ a:link{text-decoration:none;}
 			}
 		}
 	}
+	.dos{
+		& .card-a{
+			display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-wrap: wrap;
+			    width: 60%;
+			    & .content-section-a{
+			    	width: 100%;
+			    	& .content-input{
+			    		    width: 400px;
+
+			    		float: right;
+			    		& input{
+			    			border-radius: 20px;
+			    			border: 2px solid $green-background;
+			    		}
+			    	}
+			    }
+			h2{
+				color: $green-background;
+				font-weight: bold;
+				font-size: 23px;
+				text-align:right;
+				padding-bottom: 10px;
+
+			}
+		}
+		& .tipo-identification-content{
+			display: flex;
+			justify-content: flex-end;
+		}
+		& .form-control{
+				border-radius: 20px;
+				border: 2px solid $green-background;	
+			}
+		& .content-select{
+			    padding-right: 10px;
+			    width: 80px !important;
+			
+		}
+	}
+
 	.three{
 		& .card-a{
 			display: flex;
@@ -655,6 +698,22 @@ footer{
  				}
  			}
  		}
+ 		.dos{
+ 			
+ 			
+ 			& .content-select{
+ 				    padding-right: 10px;
+ 				    width: 80px !important;
+ 				
+ 			}
+ 			& .tipo-identification-content{
+	 			& .content-input{
+	 				width: 300px !important;
+	 				float: right;
+	 			}
+ 				
+ 			}
+ 		}
  		.four{
  			& .card-a{
 			    & .content-section-a{
@@ -797,6 +856,27 @@ footer{
 				}
 			
 			}
+		}
+		.dos{
+ 			& .content-select{
+ 				    padding-right: 10px;
+ 				    width: 80px !important;
+ 				
+ 			}
+ 			.form-control{font-size: 12px;}
+ 			& .tipo-identification-content{
+	 			& .content-input{
+	 				width: 200px !important;
+	 				float: right;
+	 				& input{
+	 					font-size: 12px;
+	 				}
+	 			}
+ 				
+ 			} 
+ 			select.form-control:not([size]):not([multiple]) {
+ 			    height: calc(2rem + 2px);
+ 			}			
 		}
 
 		.three{
@@ -952,6 +1032,51 @@ footer{
 				}			
 			
 			}
+		}
+
+		& .dos{
+			& .card-b{
+				width: 130px;
+				height: 110px ;
+			}
+
+			& .content-section-a {
+				& h2{
+					text-align: center;
+				}
+			}
+ 			& .content-select{
+			    padding-right: 0px !important;
+			    width: 100px !important;
+			    margin: 0 0 5px 0;
+			    & #tipo-identification{
+			    	width: 100px !important;
+			    }
+				& .form-control {
+				    font-size: 12px !important;
+				    width: 65px !important;
+				    height: 34px;
+				}
+			}
+ 				
+ 			& .tipo-identification-content{
+ 				flex-wrap: wrap;
+ 				justify-content: center;
+ 				.principal .dos .content-select {
+ 				    padding-right: 0px;
+ 				    width: auto !important;
+ 				    margin: 0 0 5px 0;
+ 				}
+	 			& .content-input{
+	 				width: 100px !important;
+	 				float: right;
+	 				& input{
+	 					font-size: 12px;
+	 				}
+	 			}
+ 				
+ 			} 
+			
 		}
 		.three{
 			& .card-a{
@@ -1198,6 +1323,48 @@ footer{
 			
 			}
 		}
+				& .dos{
+					& .card-b{
+						height: 110px !important;
+					}
+
+					& .content-section-a {
+						& h2{
+							text-align: center;
+						}
+					}
+		 			& .content-select{
+					    padding-right: 0px !important;
+					    width: 100px !important;
+					    margin: 0 0 5px 0;
+					    & #tipo-identification{
+					    	width: 100px !important;
+					    }
+						& .form-control {
+						    font-size: 12px !important;
+						    width: 65px !important;
+						    height: 34px;
+						}
+					}
+		 				
+		 			& .tipo-identification-content{
+		 				flex-wrap: wrap;
+		 				justify-content: center;
+		 				.principal .dos .content-select {
+		 				    padding-right: 0px;
+		 				    width: auto !important;
+		 				    margin: 0 0 5px 0;
+		 				}
+			 			& .content-input{
+			 				width: 100px !important;
+			 				float: right;
+			 				& input{
+			 					font-size: 12px;
+			 				}
+			 			}
+		 				
+		 			} 			
+				}
 		.three{
 			& .card-a{
 				order: 1;

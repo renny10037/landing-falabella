@@ -146,6 +146,46 @@ a:link {
       font-size: 25px;
       text-align: right;
       padding-bottom: 10px; }
+  .principal .dos .card-a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 60%; }
+    .principal .dos .card-a .content-section-a {
+      width: 100%; }
+      .principal .dos .card-a .content-section-a .content-input {
+        width: 400px;
+        float: right; }
+        .principal .dos .card-a .content-section-a .content-input input {
+          border-radius: 20px;
+          border: 2px solid #00B300; }
+    .principal .dos .card-a h2 {
+      color: #00B300;
+      font-weight: bold;
+      font-size: 23px;
+      text-align: right;
+      padding-bottom: 10px; }
+  .principal .dos .tipo-identification-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .principal .dos .form-control {
+    border-radius: 20px;
+    border: 2px solid #00B300; }
+  .principal .dos .content-select {
+    padding-right: 10px;
+    width: 80px !important; }
   .principal .three .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -546,6 +586,12 @@ footer {
     .principal .two .card-a .content-section-a .content-input {
       width: 300px;
       float: right; }
+    .principal .dos .content-select {
+      padding-right: 10px;
+      width: 80px !important; }
+    .principal .dos .tipo-identification-content .content-input {
+      width: 300px !important;
+      float: right; }
     .principal .four .card-a .content-section-a .content-select {
       width: 300px; }
     .principal .seven .img-viaje {
@@ -614,6 +660,18 @@ footer {
       width: 200px; }
       .principal .two .card-a .content-section-a .content-input input {
         font-size: 12px; }
+    .principal .dos .content-select {
+      padding-right: 10px;
+      width: 80px !important; }
+    .principal .dos .form-control {
+      font-size: 12px; }
+    .principal .dos .tipo-identification-content .content-input {
+      width: 200px !important;
+      float: right; }
+      .principal .dos .tipo-identification-content .content-input input {
+        font-size: 12px; }
+    .principal .dos select.form-control:not([size]):not([multiple]) {
+      height: calc(2rem + 2px); }
     .principal .three .card-a .content-select {
       width: 220px; }
     .principal .seven .img-viaje {
@@ -709,6 +767,36 @@ footer {
           font-size: 12px;
           width: 180px !important;
           height: auto; }
+    .principal .dos .card-b {
+      width: 130px;
+      height: 110px; }
+    .principal .dos .content-section-a h2 {
+      text-align: center; }
+    .principal .dos .content-select {
+      padding-right: 0px !important;
+      width: 100px !important;
+      margin: 0 0 5px 0; }
+      .principal .dos .content-select #tipo-identification {
+        width: 100px !important; }
+      .principal .dos .content-select .form-control {
+        font-size: 12px !important;
+        width: 65px !important;
+        height: 34px; }
+    .principal .dos .tipo-identification-content {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .principal .dos .tipo-identification-content .principal .dos .content-select {
+        padding-right: 0px;
+        width: auto !important;
+        margin: 0 0 5px 0; }
+      .principal .dos .tipo-identification-content .content-input {
+        width: 100px !important;
+        float: right; }
+        .principal .dos .tipo-identification-content .content-input input {
+          font-size: 12px; }
     .principal .three .card-a {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
@@ -862,6 +950,35 @@ footer {
         .principal .two .card-a .content-section-a .content-input input {
           font-size: 12px;
           width: 200px; }
+    .principal .dos .card-b {
+      height: 110px !important; }
+    .principal .dos .content-section-a h2 {
+      text-align: center; }
+    .principal .dos .content-select {
+      padding-right: 0px !important;
+      width: 100px !important;
+      margin: 0 0 5px 0; }
+      .principal .dos .content-select #tipo-identification {
+        width: 100px !important; }
+      .principal .dos .content-select .form-control {
+        font-size: 12px !important;
+        width: 65px !important;
+        height: 34px; }
+    .principal .dos .tipo-identification-content {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .principal .dos .tipo-identification-content .principal .dos .content-select {
+        padding-right: 0px;
+        width: auto !important;
+        margin: 0 0 5px 0; }
+      .principal .dos .tipo-identification-content .content-input {
+        width: 100px !important;
+        float: right; }
+        .principal .dos .tipo-identification-content .content-input input {
+          font-size: 12px; }
     .principal .three .card-a {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;

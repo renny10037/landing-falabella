@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-	<meta http-equiv="Cache-Control" content="max-age=31536000">
+	<!-- <meta http-equiv="Cache-Control" content="max-age=31536000"> -->
 	<title>Tiquetes Baratos, Paquetes y Hoteles | ViajesFalabella.com</title>
 	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -84,6 +84,48 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="dos contenedor">
+				<div class="container">
+					<div class="section-flex">
+						<div class="card-b">
+							<div class="content-email">
+								<img src="assets/img/identification.png" alt="Email">
+							</div>
+						</div>
+						<div class="card-a">
+							<div class="content-section-a">
+								<h2>¿Qué tipo de documento de ID utilizas? <br>¿Cuál es el número de ID?</h2>
+								<div class="tipo-identification-content">
+									<div class="form-group content-select">
+										<select name="tipo-identification" id="tipo-identification" class="form-control">
+											<option value="cédula de ciudadanía">CC</option>
+											<option value="tarjeta de identidad">TI</option>
+											<option value="tarjeta pasaporte">TP</option>
+											<option value="registro civil">RC</option>
+											<option value="cédula de extranjería">CE</option>
+										</select>
+									</div>
+									<div class="content-input">
+										<input type="number" id="identification" min="1" name="identification" size="10" maxlength="10" class="form-control" placeholder="Identification">
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="section-before-after">
+						<div class="before">
+							<button type="button" class="btn slick-previous">Anterior</button>    
+						</div>
+						<div class="after dos-after">
+							<button type="button" class="btn slick-next">Continuar</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 
 			<section class="three contenedor">
 				<div class="container">
@@ -181,7 +223,7 @@
 							<div class="content-section-a">
 								<h2>Cuándo te quieres ir:</h2>
 								<div class="form-group content-select">
-									<input id="startDate" name="startDate" placeholder="Seleccione fecha" readonly="true" />
+									<input id="startDate" name="startDate" autocomplete="off" placeholder="Seleccione fecha" readonly="true" />
 								</div>
 							</div>
 						</div>
@@ -213,7 +255,7 @@
 							<div class="content-section-a">
 								<h2>Cuándo te vas a regresar:</h2>
 								<div class="form-group content-select">
-									<input id="endDate" name="endDate" placeholder="Seleccione fecha" />
+									<input id="endDate" name="endDate" autocomplete="off" placeholder="Seleccione fecha" />
 								</div>
 							</div>
 						</div>
