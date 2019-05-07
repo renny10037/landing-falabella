@@ -55,34 +55,79 @@ $("#email").on("keyup", function() {
   }
 });
 
-//dos
-$("#identification").on("keyup", function() {
-  let identification = $('#identification').val();
-  let countIdentification = identification.length;
-  if((countIdentification > 7) && (countIdentification < 11)){
-  $('.dos-after').css("display","block");
-  } else {
-  $('.dos-after').css("display","none");
-  }  
+//three
+
+identifications(8,10);
+$("#tipo-identification").change( function() {
+  $('#identification').val('');
+  $('#identification-p').val('');
+  $('#identification').removeAttr('maxlength');
+  $('.three-after').css("display","none");
+  if ($(this).val() == 'tarjeta pasaporte') {
+    $('#identification').css("display","block");
+    $('#identification-p').css("display","none");
+    identificationsDos(8,10);
+    
+  }
+  else if (($(this).val() == 'tarjeta de identidad') || ($(this).val() == 'registro civil')) {
+    $('#identification').attr('maxlength','10');
+    identifications(8,10);
+  }
+
+  else if ($(this).val() == 'cédula de extranjería') {
+    $('#identification').attr('maxlength','7');
+    identifications(5,7);  }
+
+  else if ($(this).val() == 'cédula de ciudadanía') {
+    $('#identification').attr('maxlength','10');
+    identifications(8,10);
+  }
 });
 
-//theree destino
-$("#desde-donde-partes").change( function() {
-  if ($(this).val() == 'option') {
-    $('.three-after').css("display","none");
-  }
-  else {
+function identifications(min,max){
+  $('#identification').css("display","block");
+  $('#identification-p').css("display","none");
+  $("#identification").on("keyup", function() {
+    let identification = this.value = (this.value + '').replace(/[^0-9]/g, '');
+    if((identification.length >= min) && (identification.length <= max)){
     $('.three-after').css("display","block");
-  }
-});
+    } else {
+    $('.three-after').css("display","none");
+    }  
+  });
+};
+
+function identificationsDos(min,max){
+  $('#identification').css("display","none");
+  $('#identification-p').css("display","block");
+  $("#identification-p").on("keyup", function() {
+    let identification = this.value = $('#identification-p').val();
+    if((identification.length >= min) && (identification.length <= max)){
+    $('.three-after').css("display","block");
+    $('#identification').val(identification);
+    } else {
+    $('.three-after').css("display","none");
+    }  
+  });
+};
 
 //four destino
-$("#para-donde-quieres-ir").change( function() {
+$("#desde-donde-partes").change( function() {
   if ($(this).val() == 'option') {
     $('.four-after').css("display","none");
   }
   else {
     $('.four-after').css("display","block");
+  }
+});
+
+//five destino
+$("#para-donde-quieres-ir").change( function() {
+  if ($(this).val() == 'option') {
+    $('.five-after').css("display","none");
+  }
+  else {
+    $('.five-after').css("display","block");
   }
 });
 
@@ -131,65 +176,65 @@ $('#solo').attr('checked',true);
   });
 });
 
-//five startDate
+//six startDate
  $('#startDate').change(function() { 
       var StartDate = $('#startDate').val();
           if(StartDate == '')
           {
-              $('.five-after').css("display","none");
+              $('.six-after').css("display","none");
           } else{
-              $('.five-after').css("display","block");
+              $('.six-after').css("display","block");
           }
  });
 
- //six endDate
+ //seven endDate
   $('#endDate').change(function() { 
         var EndDate = $('#endDate').val();
            if(EndDate == '')
            {
-               $('.six-after').css("display","none");
+               $('.seven-after').css("display","none");
            } else{
-               $('.six-after').css("display","block");
+               $('.seven-after').css("display","block");
            }
   });
 
-  //seven seven-after-destock"
-  $(".seven").find('.img-viaje').click(function () {   
+  //eight eight-after-destock"
+  $(".eight").find('.img-viaje').click(function () {   
     var viaje = $('input:radio[name=viaje]:checked').val();
     if (viaje =='') {
-      ('.seven-after-destock').css("display","none");
+      ('.eight-after-destock').css("display","none");
     }else{
-      $('.seven-after-destock').css("display","block");
+      $('.eight-after-destock').css("display","block");
     }
   });
-   $(".seven").find('.destock h5').click(function () {   
+   $(".eight").find('.destock h5').click(function () {   
     var viaje = $('input:radio[name=viaje]:checked').val();
     if (viaje =='') {
-      $('.seven-after-destock').css("display","none");
+      $('.eight-after-destock').css("display","none");
     }else{
-      $('.seven-after-destock').css("display","block");
+      $('.eight-after-destock').css("display","block");
     }
   });
 
-   // eight
-   //five startDate
+   // nine
+   //six startDate
     $('#conocer').change(function() { 
           var conocer = $('#conocer').val();
              if(conocer == 'option')
              {
-                 $('.eight-after').css("display","none");
+                 $('.nine-after').css("display","none");
              } else{
-                 $('.eight-after').css("display","block");
+                 $('.nine-after').css("display","block");
              }
     });
 
 //nine-after
-$(".nine").on('click', '.custom-control-label',function() {                  
+$(".ten").on('click', '.custom-control-label',function() {                  
   var serviciosDos = $('input:checkbox[name=servicios]:checked').val();
   if (serviciosDos == '') {
-    $('.nine-after').css("display","none");
+    $('.ten-after').css("display","none");
   }else{
-    $('.nine-after').css("display","block");
+    $('.ten-after').css("display","block");
   }
 });
 
@@ -210,21 +255,6 @@ var inputEndDate = form.find('input[name="endDate"]');
 
 var selectConocer = form.find('select[name="conocer"]');
 
-// var checkboxHospedaje = form.find('#hospedaje');
-// var checkboxAlimentacion = form.find('#alimentacion');
-// var checkboxTrasladoCompartido = form.find('#traslado-compartido');
-// var checkboxTrasladoPrivado = form.find('#traslado-privado');
-// var checkboxTours = form.find('#tours');
-// var checkboxTiquetes = form.find('#tiquetes');
-// var checkboxSegurosDeviaje = form.find('#seguros-de-viaje');
-// var checkboxLugaresDeInteres = form.find('#lugares-de-interes');
-// var checkboxActividadesgratuitas = form.find('#actividades-gratuitas');
-
-// var servicios = [];
-// var aux;
-// $("input:checkbox:checked").each(function() {
-//   aux = servicios.push($(this).val());
-// });
 
 var inputToken = form.find('input[name="token_rdstation"]');
 var inputIdentificador = form.find('input[name="identificador"]');

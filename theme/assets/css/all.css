@@ -1,3 +1,4 @@
+/*Realizado por: Renny Petit;*/
 .ws-hidden {
   display: none; }
 
@@ -60,6 +61,9 @@ a:link {
       color: gray; }
       .header .information .p-last a {
         color: gray; }
+
+#identification-p {
+  display: none; }
 
 .principal {
   height: 600px;
@@ -146,7 +150,7 @@ a:link {
       font-size: 25px;
       text-align: right;
       padding-bottom: 10px; }
-  .principal .dos .card-a {
+  .principal .three .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,63 +163,33 @@ a:link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 60%; }
-    .principal .dos .card-a .content-section-a {
-      width: 100%; }
-      .principal .dos .card-a .content-section-a .content-input {
-        width: 400px;
-        float: right; }
-        .principal .dos .card-a .content-section-a .content-input input {
-          border-radius: 20px;
-          border: 2px solid #00B300; }
-    .principal .dos .card-a h2 {
-      color: #00B300;
-      font-weight: bold;
-      font-size: 23px;
-      text-align: right;
-      padding-bottom: 10px; }
-  .principal .dos .tipo-identification-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-  .principal .dos .form-control {
-    border-radius: 20px;
-    border: 2px solid #00B300; }
-  .principal .dos .content-select {
-    padding-right: 10px;
-    width: 80px !important; }
-  .principal .three .card-a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
     .principal .three .card-a .content-section-a {
       width: 100%; }
       .principal .three .card-a .content-section-a .content-input {
-        width: 400px; }
+        width: 400px;
+        float: right; }
         .principal .three .card-a .content-section-a .content-input input {
           border-radius: 20px;
           border: 2px solid #00B300; }
     .principal .three .card-a h2 {
       color: #00B300;
       font-weight: bold;
-      font-size: 25px;
+      font-size: 23px;
+      text-align: right;
       padding-bottom: 10px; }
-    .principal .three .card-a .from-control {
-      border-radius: 20px;
-      border: 2px solid #00B300; }
-    .principal .three .card-a .content-select {
-      width: 400px;
-      float: left; }
+  .principal .three .tipo-identification-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .principal .three .form-control {
+    border-radius: 20px;
+    border: 2px solid #00B300; }
+  .principal .three .content-select {
+    padding-right: 10px;
+    width: 80px !important; }
   .principal .four .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -229,8 +203,7 @@ a:link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .principal .four .card-a .content-section-a {
-      width: 100%;
-      text-align: right; }
+      width: 100%; }
       .principal .four .card-a .content-section-a .content-input {
         width: 400px; }
         .principal .four .card-a .content-section-a .content-input input {
@@ -246,7 +219,7 @@ a:link {
       border: 2px solid #00B300; }
     .principal .four .card-a .content-select {
       width: 400px;
-      float: right; }
+      float: left; }
   .principal .five .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -261,7 +234,7 @@ a:link {
         flex-wrap: wrap; }
     .principal .five .card-a .content-section-a {
       width: 100%;
-      text-align: left; }
+      text-align: right; }
       .principal .five .card-a .content-section-a .content-input {
         width: 400px; }
         .principal .five .card-a .content-section-a .content-input input {
@@ -276,7 +249,8 @@ a:link {
       border-radius: 20px;
       border: 2px solid #00B300; }
     .principal .five .card-a .content-select {
-      width: 400px; }
+      width: 400px;
+      float: right; }
   .principal .six .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,14 +265,12 @@ a:link {
         flex-wrap: wrap; }
     .principal .six .card-a .content-section-a {
       width: 100%;
-      text-align: right; }
+      text-align: left; }
       .principal .six .card-a .content-section-a .content-input {
         width: 400px; }
         .principal .six .card-a .content-section-a .content-input input {
           border-radius: 20px;
           border: 2px solid #00B300; }
-    .principal .six .card-a .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
-      float: right; }
     .principal .six .card-a h2 {
       color: #00B300;
       font-weight: bold;
@@ -308,16 +280,48 @@ a:link {
       border-radius: 20px;
       border: 2px solid #00B300; }
     .principal .six .card-a .content-select {
+      width: 400px; }
+  .principal .seven .card-a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .principal .seven .card-a .content-section-a {
+      width: 100%;
+      text-align: right; }
+      .principal .seven .card-a .content-section-a .content-input {
+        width: 400px; }
+        .principal .seven .card-a .content-section-a .content-input input {
+          border-radius: 20px;
+          border: 2px solid #00B300; }
+    .principal .seven .card-a .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+      float: right; }
+    .principal .seven .card-a h2 {
+      color: #00B300;
+      font-weight: bold;
+      font-size: 25px;
+      padding-bottom: 10px; }
+    .principal .seven .card-a .from-control {
+      border-radius: 20px;
+      border: 2px solid #00B300; }
+    .principal .seven .card-a .content-select {
       width: 400px;
       float: right; }
-  .principal .seven h2 {
+  .principal .eight h2 {
     width: 100%;
     text-align: center;
     color: #00B300;
     font-weight: bold;
     font-size: 25px;
     padding-bottom: 10px; }
-  .principal .seven .seven-card-a, .principal .seven .seven-card-b {
+  .principal .eight .eight-card-a, .principal .eight .eight-card-b {
     width: 50%;
     height: 100%;
     display: -webkit-box;
@@ -329,16 +333,16 @@ a:link {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .principal .seven .img-viaje {
+  .principal .eight .img-viaje {
     height: 200px;
     width: 250px; }
-  .principal .seven #img-solo {
+  .principal .eight #img-solo {
     width: 225px;
     padding-left: 25px; }
-  .principal .seven .text-viaje {
+  .principal .eight .text-viaje {
     width: 100%;
     text-align: -webkit-center; }
-    .principal .seven .text-viaje .texto h5 {
+    .principal .eight .text-viaje .texto h5 {
       background: #00B300;
       width: 170px;
       padding: 7px;
@@ -346,66 +350,18 @@ a:link {
       font-size: 16px;
       color: white;
       font-weight: 400; }
-    .principal .seven .text-viaje .form-check {
+    .principal .eight .text-viaje .form-check {
       padding-left: 0; }
-    .principal .seven .text-viaje .form-check-input {
+    .principal .eight .text-viaje .form-check-input {
       margin-top: 0.2rem; }
-  .principal .seven label {
+  .principal .eight label {
     width: 100%;
     height: 100%;
     display: initial; }
-  .principal .seven .pareja, .principal .seven .familia, .principal .seven .amigos {
+  .principal .eight .pareja, .principal .eight .familia, .principal .eight .amigos {
     display: none; }
-  .principal .seven .section-before-after {
+  .principal .eight .section-before-after {
     margin-top: 2px; }
-  .principal .eight .card-a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .principal .eight .card-a .content-section-a {
-      width: 100%;
-      text-align: right; }
-      .principal .eight .card-a .content-section-a .content-input {
-        width: 400px; }
-        .principal .eight .card-a .content-section-a .content-input input {
-          border-radius: 20px;
-          border: 2px solid #00B300; }
-    .principal .eight .card-a h2 {
-      color: #00B300;
-      font-weight: bold;
-      font-size: 25px;
-      padding-bottom: 10px; }
-    .principal .eight .card-a .from-control {
-      border-radius: 20px;
-      border: 2px solid #00B300; }
-    .principal .eight .card-a .content-select {
-      width: 400px;
-      float: right; }
-  .principal .eight img {
-    width: 100%;
-    height: 90%;
-    cursor: pointer; }
-  .principal .nine h2 {
-    color: #00B300;
-    font-weight: bold;
-    font-size: 25px;
-    padding-bottom: 10px; }
-  .principal .nine .flex-checkbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
   .principal .nine .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,26 +373,43 @@ a:link {
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 50%; }
+        flex-wrap: wrap; }
     .principal .nine .card-a .content-section-a {
       width: 100%;
-      text-align: left; }
-      .principal .nine .card-a .content-section-a .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-        background: #00B300; }
-      .principal .nine .card-a .content-section-a .custom-checkbox .custom-control-label::before {
-        border-radius: 0;
-        background: white;
-        border: 2px solid #00B300; }
-      .principal .nine .card-a .content-section-a label {
-        color: #5a5858; }
+      text-align: right; }
+      .principal .nine .card-a .content-section-a .content-input {
+        width: 400px; }
+        .principal .nine .card-a .content-section-a .content-input input {
+          border-radius: 20px;
+          border: 2px solid #00B300; }
+    .principal .nine .card-a h2 {
+      color: #00B300;
+      font-weight: bold;
+      font-size: 25px;
+      padding-bottom: 10px; }
     .principal .nine .card-a .from-control {
       border-radius: 20px;
       border: 2px solid #00B300; }
     .principal .nine .card-a .content-select {
-      width: 400px; }
-  .principal .nine .section-before-after {
-    margin-top: -48px; }
+      width: 400px;
+      float: right; }
+  .principal .nine img {
+    width: 100%;
+    height: 90%;
+    cursor: pointer; }
+  .principal .ten h2 {
+    color: #00B300;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px; }
+  .principal .ten .flex-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .principal .ten .card-a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,39 +422,70 @@ a:link {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 30%; }
+    width: 50%; }
     .principal .ten .card-a .content-section-a {
       width: 100%;
       text-align: left; }
-      .principal .ten .card-a .content-section-a .content-input {
+      .principal .ten .card-a .content-section-a .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+        background: #00B300; }
+      .principal .ten .card-a .content-section-a .custom-checkbox .custom-control-label::before {
+        border-radius: 0;
+        background: white;
+        border: 2px solid #00B300; }
+      .principal .ten .card-a .content-section-a label {
+        color: #5a5858; }
+    .principal .ten .card-a .from-control {
+      border-radius: 20px;
+      border: 2px solid #00B300; }
+    .principal .ten .card-a .content-select {
+      width: 400px; }
+  .principal .ten .section-before-after {
+    margin-top: -48px; }
+  .principal .eleven .card-a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 30%; }
+    .principal .eleven .card-a .content-section-a {
+      width: 100%;
+      text-align: left; }
+      .principal .eleven .card-a .content-section-a .content-input {
         width: 400px; }
-        .principal .ten .card-a .content-section-a .content-input input {
+        .principal .eleven .card-a .content-section-a .content-input input {
           border-radius: 20px;
           border: 2px solid #00B300; }
-    .principal .ten .card-a h2 {
+    .principal .eleven .card-a h2 {
       color: #00B300;
       font-weight: bold;
       font-size: 30px;
       padding-bottom: 10px; }
-    .principal .ten .card-a h3 {
+    .principal .eleven .card-a h3 {
       color: gray;
       font-size: 18px;
       line-height: 1.3;
       padding-top: 10px; }
-    .principal .ten .card-a h4 {
+    .principal .eleven .card-a h4 {
       color: #584a4a;
       font-size: 16px;
       line-height: 1.3;
       padding-top: 10px;
       font-weight: bold;
       letter-spacing: 0.8px; }
-    .principal .ten .card-a .from-control {
+    .principal .eleven .card-a .from-control {
       border-radius: 20px;
       border: 2px solid #00B300; }
-    .principal .ten .card-a .content-select {
+    .principal .eleven .card-a .content-select {
       width: 400px; }
 
-.three div.content-section-a > div > select, .four div.content-section-a > div > select, .eight div.content-section-a > div > select, .seven #viaje {
+.four div.content-section-a > div > select, .five div.content-section-a > div > select, .nine div.content-section-a > div > select, .eight #viaje {
   border-radius: 20px;
   border: 2px solid #00B300; }
 
@@ -586,33 +590,33 @@ footer {
     .principal .two .card-a .content-section-a .content-input {
       width: 300px;
       float: right; }
-    .principal .dos .content-select {
+    .principal .three .content-select {
       padding-right: 10px;
       width: 80px !important; }
-    .principal .dos .tipo-identification-content .content-input {
+    .principal .three .tipo-identification-content .content-input {
       width: 300px !important;
       float: right; }
-    .principal .four .card-a .content-section-a .content-select {
+    .principal .five .card-a .content-section-a .content-select {
       width: 300px; }
-    .principal .seven .img-viaje {
+    .principal .eight .img-viaje {
       height: 150px;
       width: 150px; }
-    .principal .seven #img-solo {
+    .principal .eight #img-solo {
       width: inherit;
       padding-left: initial; }
-    .principal .seven .text-viaje .texto h5 {
+    .principal .eight .text-viaje .texto h5 {
       width: 130px;
       padding: 5px;
       font-size: 14px; }
-    .principal .seven .section-before-after {
+    .principal .eight .section-before-after {
       margin-top: 2px; }
-    .principal .eight .card-b {
+    .principal .nine .card-b {
       width: 200px; }
-    .principal .nine .card-a {
-      width: 100%; }
-    .principal .nine .section-before-after {
-      margin-top: -38px; }
     .principal .ten .card-a {
+      width: 100%; }
+    .principal .ten .section-before-after {
+      margin-top: -38px; }
+    .principal .eleven .card-a {
       width: 50%; }
   /*end body*/
   /*start footer*/
@@ -660,42 +664,42 @@ footer {
       width: 200px; }
       .principal .two .card-a .content-section-a .content-input input {
         font-size: 12px; }
-    .principal .dos .content-select {
+    .principal .three .content-select {
       padding-right: 10px;
       width: 80px !important; }
-    .principal .dos .form-control {
+    .principal .three .form-control {
       font-size: 12px; }
-    .principal .dos .tipo-identification-content .content-input {
+    .principal .three .tipo-identification-content .content-input {
       width: 200px !important;
       float: right; }
-      .principal .dos .tipo-identification-content .content-input input {
+      .principal .three .tipo-identification-content .content-input input {
         font-size: 12px; }
-    .principal .dos select.form-control:not([size]):not([multiple]) {
+    .principal .three select.form-control:not([size]):not([multiple]) {
       height: calc(2rem + 2px); }
-    .principal .three .card-a .content-select {
+    .principal .four .card-a .content-select {
       width: 220px; }
-    .principal .seven .img-viaje {
+    .principal .eight .img-viaje {
       height: 100px;
       width: 100px; }
-    .principal .seven #img-solo {
+    .principal .eight #img-solo {
       width: inherit;
       padding-left: initial; }
-    .principal .seven .text-viaje .texto h5 {
+    .principal .eight .text-viaje .texto h5 {
       width: 95px;
       padding: 7px;
       font-size: 12px; }
-    .principal .seven .section-before-after {
+    .principal .eight .section-before-after {
       margin-top: -1px; }
-    .principal .nine .flex-checkbox {
+    .principal .ten .flex-checkbox {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
       font-size: 12px; }
-    .principal .nine .section-before-after {
+    .principal .ten .section-before-after {
       margin-top: -36px; }
-    .principal .ten .card-a {
+    .principal .eleven .card-a {
       width: 70%; }
-      .principal .ten .card-a h3, .principal .ten .card-a h4 {
+      .principal .eleven .card-a h3, .principal .eleven .card-a h4 {
         font-size: 14px !important; }
     .principal footer h5 {
       font-size: 12px; } }
@@ -719,9 +723,9 @@ footer {
       display: none; }
     .principal .mobile {
       display: block; }
-    .principal .seven-after-mobile {
+    .principal .eight-after-mobile {
       display: block; }
-    .principal .seven-after-destock {
+    .principal .eight-after-destock {
       display: none; }
     .principal h2 {
       font-size: 15px !important;
@@ -767,106 +771,106 @@ footer {
           font-size: 12px;
           width: 180px !important;
           height: auto; }
-    .principal .dos .card-b {
+    .principal .three .card-b {
       width: 130px;
       height: 110px; }
-    .principal .dos .content-section-a h2 {
+    .principal .three .content-section-a h2 {
       text-align: center; }
-    .principal .dos .content-select {
+    .principal .three .content-select {
       padding-right: 0px !important;
       width: 100px !important;
       margin: 0 0 5px 0; }
-      .principal .dos .content-select #tipo-identification {
+      .principal .three .content-select #tipo-identification {
         width: 100px !important; }
-      .principal .dos .content-select .form-control {
+      .principal .three .content-select .form-control {
         font-size: 12px !important;
         width: 65px !important;
         height: 34px; }
-    .principal .dos .tipo-identification-content {
+    .principal .three .tipo-identification-content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .principal .dos .tipo-identification-content .principal .dos .content-select {
+      .principal .three .tipo-identification-content .principal .three .content-select {
         padding-right: 0px;
         width: auto !important;
         margin: 0 0 5px 0; }
-      .principal .dos .tipo-identification-content .content-input {
+      .principal .three .tipo-identification-content .content-input {
         width: 100px !important;
         float: right; }
-        .principal .dos .tipo-identification-content .content-input input {
+        .principal .three .tipo-identification-content .content-input input {
           font-size: 12px; }
-    .principal .three .card-a {
+    .principal .four .card-a {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-      .principal .three .card-a .content-select {
+      .principal .four .card-a .content-select {
         width: 200px;
         float: left; }
-    .principal .five .card-a {
+    .principal .six .card-a {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; }
-    .principal .five .card-b {
+    .principal .six .card-b {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-    .principal .five #startDate {
+    .principal .six #startDate {
       font-size: 14px; }
-    .principal .five .input-group {
+    .principal .six .input-group {
       width: 200px !important;
       margin: auto; }
-    .principal .six .content-section-a {
+    .principal .seven .content-section-a {
       width: 200px !important; }
-    .principal .seven .mobile .card-b {
+    .principal .eight .mobile .card-b {
       width: 150px;
       height: 150px; }
-      .principal .seven .mobile .card-b .img-viaje {
+      .principal .eight .mobile .card-b .img-viaje {
         width: 150px;
         height: 150px; }
-    .principal .seven .section-before-after {
+    .principal .eight .section-before-after {
       margin-top: -2px !important; }
-    .principal .nine .section-flex .card-a {
+    .principal .ten .section-flex .card-a {
       width: 100%; }
-      .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+      .principal .ten .section-flex .card-a .content-section-a .flex-checkbox {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
         font-size: 13px; }
-      .principal .nine .section-flex .card-a .card-checkbox-b {
+      .principal .ten .section-flex .card-a .card-checkbox-b {
         padding-left: 10px; }
-    .principal .nine .section-flex .card-b {
+    .principal .ten .section-flex .card-b {
       display: none; }
-    .principal .nine .section-before-after {
+    .principal .ten .section-before-after {
       margin-top: -34px; }
-    .principal .ten .card-a {
+    .principal .eleven .card-a {
       width: 100% !important; }
-      .principal .ten .card-a .content-section-a h2, .principal .ten .card-a .content-section-a h3 {
+      .principal .eleven .card-a .content-section-a h2, .principal .eleven .card-a .content-section-a h3 {
         font-size: 12px; }
-    .principal .ten .card-b {
+    .principal .eleven .card-b {
       width: 100px;
       height: 100px; }
     .principal footer h5 {
       font-size: 12px; } }
 
 @media screen and (max-width: 690px) {
-  .principal .nine .section-flex {
+  .principal .ten .section-flex {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important; }
-    .principal .nine .section-flex .card-a {
+    .principal .ten .section-flex .card-a {
       width: 100%; }
-      .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+      .principal .ten .section-flex .card-a .content-section-a .flex-checkbox {
         -ms-flex-wrap: wrap !important;
             flex-wrap: wrap !important; }
-        .principal .nine .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-a {
+        .principal .ten .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-a {
           width: 250px; }
-        .principal .nine .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-b {
+        .principal .ten .section-flex .card-a .content-section-a .flex-checkbox .card-checkbox-b {
           width: 250px;
           padding-left: 0; } }
 
@@ -898,9 +902,9 @@ footer {
     /*end footer*/ }
     .principal .slick-list.draggable {
       padding: 0px !important; }
-    .principal .seven-after-mobile {
+    .principal .eight-after-mobile {
       display: block; }
-    .principal .seven-after-destock {
+    .principal .eight-after-destock {
       display: none; }
     .principal .contenedor {
       padding: 20px 0; }
@@ -950,82 +954,82 @@ footer {
         .principal .two .card-a .content-section-a .content-input input {
           font-size: 12px;
           width: 200px; }
-    .principal .dos .card-b {
+    .principal .three .card-b {
       height: 110px !important; }
-    .principal .dos .content-section-a h2 {
+    .principal .three .content-section-a h2 {
       text-align: center; }
-    .principal .dos .content-select {
+    .principal .three .content-select {
       padding-right: 0px !important;
       width: 100px !important;
       margin: 0 0 5px 0; }
-      .principal .dos .content-select #tipo-identification {
+      .principal .three .content-select #tipo-identification {
         width: 100px !important; }
-      .principal .dos .content-select .form-control {
+      .principal .three .content-select .form-control {
         font-size: 12px !important;
         width: 65px !important;
         height: 34px; }
-    .principal .dos .tipo-identification-content {
+    .principal .three .tipo-identification-content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .principal .dos .tipo-identification-content .principal .dos .content-select {
+      .principal .three .tipo-identification-content .principal .three .content-select {
         padding-right: 0px;
         width: auto !important;
         margin: 0 0 5px 0; }
-      .principal .dos .tipo-identification-content .content-input {
+      .principal .three .tipo-identification-content .content-input {
         width: 100px !important;
         float: right; }
-        .principal .dos .tipo-identification-content .content-input input {
+        .principal .three .tipo-identification-content .content-input input {
           font-size: 12px; }
-    .principal .three .card-a {
+    .principal .four .card-a {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-    .principal .five .card-a {
+    .principal .six .card-a {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-    .principal .seven .destock {
+    .principal .eight .destock {
       display: none; }
-    .principal .seven .mobile {
+    .principal .eight .mobile {
       display: block; }
-    .principal .seven .img-viaje {
+    .principal .eight .img-viaje {
       width: 150px;
       height: 150px; }
-    .principal .seven #img-solo {
+    .principal .eight #img-solo {
       width: inherit;
       padding-left: initial; }
-    .principal .seven .pareja, .principal .seven .familia, .principal .seven .amigos {
+    .principal .eight .pareja, .principal .eight .familia, .principal .eight .amigos {
       display: none; }
-    .principal .seven .section-before-after {
+    .principal .eight .section-before-after {
       margin-top: -21px; }
-    .principal .nine .section-flex .card-a {
+    .principal .ten .section-flex .card-a {
       width: 100%; }
-      .principal .nine .section-flex .card-a .content-section-a .flex-checkbox {
+      .principal .ten .section-flex .card-a .content-section-a .flex-checkbox {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
         font-size: 12px; }
-    .principal .nine .section-flex .card-b {
+    .principal .ten .section-flex .card-b {
       width: 100% !important;
       top: 0;
       margin-top: -50px; }
-      .principal .nine .section-flex .card-b .servicios {
+      .principal .ten .section-flex .card-b .servicios {
         width: 120px;
         height: 120px; }
-    .principal .ten .section-flex .card-a {
+    .principal .eleven .section-flex .card-a {
       width: 70%; }
-      .principal .ten .section-flex .card-a h2 {
+      .principal .eleven .section-flex .card-a h2 {
         font-size: 18px !important; }
-      .principal .ten .section-flex .card-a h3, .principal .ten .section-flex .card-a h4 {
+      .principal .eleven .section-flex .card-a h3, .principal .eleven .section-flex .card-a h4 {
         font-size: 15px; }
     .principal footer h5 {
       font-size: 12px; } }
 
 /*end responsive 522-0*/
 @media screen and (max-width: 374px) {
-  .nine .section-before-after {
+  .ten .section-before-after {
     margin-top: -50px !important; } }

@@ -1,3 +1,5 @@
+/*Realizado por: Renny Petit;*/
+
 $green-text:#71b64c;
 $green-background:#00B300;
 
@@ -47,7 +49,7 @@ a:link{text-decoration:none;}
 		}
 	}
 }
-
+#identification-p{display: none;}
 .principal{
 	height: 600px;
 	width: 100%;
@@ -128,7 +130,7 @@ a:link{text-decoration:none;}
 			}
 		}
 	}
-	.dos{
+	.three{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -171,7 +173,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.three{
+	.four{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -208,7 +210,7 @@ a:link{text-decoration:none;}
 			}
 		}
 	}
-	.four{
+	.five{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -247,7 +249,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.five{
+	.six{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -287,7 +289,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.six{
+	.seven{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -330,7 +332,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.seven{
+	.eight{
 		& h2{
 			width: 100%;
 			text-align: center;
@@ -341,7 +343,7 @@ a:link{text-decoration:none;}
 		}
 		
 
-		& .seven-card-a, & .seven-card-b{
+		& .eight-card-a, & .eight-card-b{
 		width: 50%;
 		height: 100%;
 		display: flex;
@@ -393,7 +395,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.eight{
+	.nine{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -437,7 +439,7 @@ a:link{text-decoration:none;}
 			cursor: pointer;
 		}
 	}
-	.nine{
+	.ten{
 		h2{
 			color: $green-background;
 			font-weight: bold;
@@ -491,7 +493,7 @@ a:link{text-decoration:none;}
 		}
 	}
 
-	.ten{
+	.eleven{
 		& .card-a{
 			display: flex;
 			    justify-content: center;
@@ -549,7 +551,7 @@ a:link{text-decoration:none;}
 
 
 }
-.three  div.content-section-a > div > select,.four div.content-section-a > div > select,.eight div.content-section-a > div > select, .seven #viaje{
+.four  div.content-section-a > div > select,.five div.content-section-a > div > select,.nine div.content-section-a > div > select, .eight #viaje{
 	border-radius: 20px;
 	border: 2px solid $green-background;		
 }
@@ -698,7 +700,7 @@ footer{
  				}
  			}
  		}
- 		.dos{
+ 		.three{
  			
  			
  			& .content-select{
@@ -714,7 +716,7 @@ footer{
  				
  			}
  		}
- 		.four{
+ 		.five{
  			& .card-a{
 			    & .content-section-a{
 			    	& .content-select{
@@ -724,7 +726,7 @@ footer{
 				}
  			}
  		}
- 		& .seven{
+ 		& .eight{
  			& .img-viaje{
  				height: 150px;
  				width: 150px;
@@ -743,13 +745,13 @@ footer{
  				margin-top: 2px;
  			}
  		}
- 		& .eight{
+ 		& .nine{
  			& .card-b{
  				width: 200px;
  			}
  			
  		}
- 		& .nine{
+ 		& .ten{
  			& .card-a{
  				width: 100%;
  			}
@@ -757,7 +759,7 @@ footer{
  				margin-top: -38px;
  			}
  		}
- 		& .ten {
+ 		& .eleven {
  			& .card-a{
  				width: 50%;
  			}
@@ -857,7 +859,7 @@ footer{
 			
 			}
 		}
-		.dos{
+		.three{
  			& .content-select{
  				    padding-right: 10px;
  				    width: 80px !important;
@@ -879,14 +881,14 @@ footer{
  			}			
 		}
 
-		.three{
+		.four{
 			& .card-a{
 				& .content-select{
 					    width: 220px;
 				}
 			}
 		}
-		& .seven{
+		& .eight{
 			& .img-viaje{
 				height: 100px;
 				width: 100px;
@@ -904,7 +906,7 @@ footer{
 				margin-top: -1px;
 			}
 		}
-		& .nine{
+		& .ten{
 			& .flex-checkbox{
 				justify-content: flex-start;
 				font-size: 12px;
@@ -913,7 +915,7 @@ footer{
 				margin-top: -36px;
 			}
 		}
-		& .ten{
+		& .eleven{
 			& .card-a{
 				width: 70%;
 				& h3, & h4{
@@ -963,10 +965,10 @@ footer{
 		.mobile{
 			display: block;
 		}
-		.seven-after-mobile{
+		.eight-after-mobile{
 			display: block;
 		}
-		.seven-after-destock{
+		.eight-after-destock{
 			display: none;
 		}
 		& h2{
@@ -1034,7 +1036,7 @@ footer{
 			}
 		}
 
-		& .dos{
+		& .three{
 			& .card-b{
 				width: 130px;
 				height: 110px ;
@@ -1062,7 +1064,7 @@ footer{
  			& .tipo-identification-content{
  				flex-wrap: wrap;
  				justify-content: center;
- 				.principal .dos .content-select {
+ 				.principal .three .content-select {
  				    padding-right: 0px;
  				    width: auto !important;
  				    margin: 0 0 5px 0;
@@ -1078,7 +1080,7 @@ footer{
  			} 
 			
 		}
-		.three{
+		.four{
 			& .card-a{
 				order:1;
 				& .content-select{
@@ -1089,7 +1091,7 @@ footer{
 				}
 			}
 		}
-		.five{
+		.six{
 			.card-a{
 				order: 2;
 			}
@@ -1102,12 +1104,12 @@ footer{
 			& .input-group { width: 200px!important; margin: auto; }
 
 		}
-		& .six{
+		& .seven{
 			& .content-section-a{
 				width: 200px !important;
 			}
 		}
-		& .seven{
+		& .eight{
 			& .mobile{
 
 				& .card-b{
@@ -1123,7 +1125,7 @@ footer{
 				margin-top: -2px !important;
 			}
 		}
-		& .nine{
+		& .ten{
 			& .section-flex{
 				& .card-a{
 					width: 100%;
@@ -1147,7 +1149,7 @@ footer{
 			}
 
 		}
-		& .ten{
+		& .eleven{
 			& .card-a{
 				width: 100% !important;
 				& .content-section-a{
@@ -1178,7 +1180,7 @@ footer{
 
 @media screen and (max-width: 690px) {
 	.principal{
-		& .nine{
+		& .ten{
 			& .section-flex{
 				justify-content: flex-start !important;
 				align-items: flex-start !important;
@@ -1246,10 +1248,10 @@ footer{
 
 			}
 		}
-		.seven-after-mobile{
+		.eight-after-mobile{
 			display: block;
 		}
-		.seven-after-destock{
+		.eight-after-destock{
 			display: none;
 		}
 		height: 500px;
@@ -1323,7 +1325,7 @@ footer{
 			
 			}
 		}
-				& .dos{
+				& .three{
 					& .card-b{
 						height: 110px !important;
 					}
@@ -1350,7 +1352,7 @@ footer{
 		 			& .tipo-identification-content{
 		 				flex-wrap: wrap;
 		 				justify-content: center;
-		 				.principal .dos .content-select {
+		 				.principal .three .content-select {
 		 				    padding-right: 0px;
 		 				    width: auto !important;
 		 				    margin: 0 0 5px 0;
@@ -1365,18 +1367,18 @@ footer{
 		 				
 		 			} 			
 				}
-		.three{
+		.four{
 			& .card-a{
 				order: 1;
 			}
 		}
 
-		& .five{
+		& .six{
 			& .card-a{
 				order: 1;
 			}
 		}
-		& .seven{
+		& .eight{
 			.destock{
 				display: none;
 			}
@@ -1399,7 +1401,7 @@ footer{
 				margin-top: -21px;
 			}
 		}
-		& .nine{
+		& .ten{
 			& .section-flex{
 				& .card-a{
 					width: 100%;
@@ -1426,7 +1428,7 @@ footer{
 			}
 
 		}
-		& .ten{
+		& .eleven{
 			& .section-flex{
 				& .card-a{
 					width: 70%;
@@ -1450,7 +1452,7 @@ footer{
 
 /*end responsive 522-0*/
 @media screen and (max-width: 374px) {
-	& .nine{
+	& .ten{
 		& .section-before-after{
 			margin-top: -50px !important;
 		}
